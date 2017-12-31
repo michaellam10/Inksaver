@@ -1,0 +1,38 @@
+html {
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+@font-face {
+  font-family: 'ProximaRegular', sans-serif;
+  src: url("../../fonts/ProximaNova-Regular.eot");
+  /* IE9 Compat Modes */
+  src: url("../../fonts/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/ProximaNova-Regular.woff2") format("woff2"), url("../../fonts/ProximaNova-Regular.woff") format("woff"), url("../../fonts/ProximaNova-Regular.ttf") format("truetype"), url("../../fonts/ProximaNova-Regular.svg#ProximaRegular") format("svg");
+  /* Legacy iOS */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ProximaRegularItalic', sans-serif;
+  src: url("../../fonts/ProximaNova-RegularItalic.eot");
+  /* IE9 Compat Modes */
+  src: url("../../fonts/ProximaNova-RegularItalic.eot?#iefix") format("embedded-opentype"), url("../../fonts/ProximaNova-RegularItalic.woff2") format("woff2"), url("../../fonts/ProximaNova-RegularItalic.woff") format("woff"), url("../../fonts/ProximaNova-RegularItalic.ttf") format("truetype"), url("../../fonts/ProximaNova-RegularItalic.svg#ProximaRegularItalic") format("svg");
+  /* Legacy iOS */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ProximaBold', sans-serif;
+  src: url("../../fonts/ProximaNova-Bold.eot");
+  /* IE9 Compat Modes */
+  src: url("../../fonts/ProximaNova-Bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/ProximaNova-Bold.woff2") format("woff2"), url("../../fonts/ProximaNova-Bold.woff") format("woff"), url("../../fonts/ProximaNova-Bold.ttf") format("truetype"), url("../../fonts/ProximaNova-Bold.svg#ProximaBold") format("svg");
+  /* Legacy iOS */
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "ProximaRegular", sans-serif !important;
+}

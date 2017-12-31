@@ -1,0 +1,119 @@
+.select2-container {
+    display: block;   
+    width: auto!important;
+    font-size: 14px;
+}
+
+.select2-container--default .select2-selection--single {
+    @include border-radius(0);
+    border-color: $border-color;
+    height: 44px;   
+
+
+    &:focus {
+        outline: none;   
+        border-color: darken($border-color, 10%);
+    }
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+    padding-left: 15px;
+    padding-right: 40px;  
+    text-align: left; 
+    margin-top: 8px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: $title-color;   
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 42px;
+    top: 1px;
+    width: 43px;
+}
+
+.select2-dropdown {
+    @include border-radius(0);
+    border-color: $border-color;   
+}
+
+.select2-dropdown .flag-sm {
+    float: left;
+    margin-top: 2px;
+    margin-right: 8px;
+}
+
+.select2-results__option {
+    padding: 12px 15px 10px 15px; 
+}
+
+.select2-container--default .select2-results__option[aria-selected=true] {
+    background: lighten($text-color, 44%);
+    color: $text-color;       
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+    background-color: lighten($text-color, 38%);
+    color: $text-color;   
+}
+
+.select2-container--default .select2-search--dropdown .select2-search__field {
+    border-color: $border-color;
+    height: 38px;
+    color: $title-color;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    &:focus {
+        outline: none;   
+        border-color: darken($border-color, 10%);
+    }
+       
+}
+
+.select2-results__option {
+    font-size: 14px;
+    color: $text-color;   
+}
+
+.select2-search--dropdown {
+    padding: 10px;   
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+    border: none;       
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+    margin-top: -12px;   
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b:before {
+    content: '\f078';   
+    font-size: 9px;
+    color: $title-color;
+    font-family: FontAwesome;
+}
+
+.select2-selection__rendered .flag-sm {
+ margin-top: 4px;
+    float: left;
+    margin-right: 8px;
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+    background: $contrast-color;
+    color: $text-color;   
+}
+
+/* xs */
+@media (max-width: 767px) {
+    .select2-results__option {
+        font-size: 12px;
+    }
+    .select2-container {
+        font-size: 12px;
+    }
+
+}

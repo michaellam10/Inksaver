@@ -1,0 +1,16 @@
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar, .mCSB_scrollTools {
+    width: 4px;
+}
+
+.mCSB_inside > .mCSB_container {
+    margin-right: 0;
+}
+
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background: darken($contrast-color,10%)!important; 
+    border-radius: 0!important;
+}
+
+.mCSB_scrollTools .mCSB_draggerRail {
+    background: none;
+}

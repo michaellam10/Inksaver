@@ -1,0 +1,230 @@
+.banner-container {
+  background-color: #f5f5f5;
+}
+
+.banner-slider {
+ .banner-content-contain {
+  position:relative;
+ }
+  .slick-list {
+    padding-top: 0px;
+  }
+  .banner-title-pre {
+      color: $text-color;
+      text-transform: uppercase;
+      font-size: 12px;
+      margin-bottom: 0;
+    }
+    h1 {
+      font-size: 45px;
+      font-family: 'ProximaLight';
+    }
+  .btn-order-online {
+    background-color: $gray-dark;
+    font-size: 12px;
+    padding: 14px 15px;
+    transition: all 0.2s;
+    margin-top: 15px;
+    &:hover {
+      background-color: darken($gray-dark, 10%);
+      transition: all 0.3s;
+    }
+    i {
+      font-size: 18px;
+      position: relative;
+      top: 4px;
+      line-height: 0;
+      margin-left: 5px;
+    }
+  }
+  .voucher-code {
+    background-color: rgba($primary-color, 0.1);
+    border: 1px solid $primary-color;
+    padding: 10px 10px 15px;
+    text-align: center;
+    p {
+      font-size: 14px;
+      text-transform: uppercase;
+      color: $gray-dark;
+      margin-bottom: 0;
+    }
+    .code {
+      font-size: 21px;
+      color: $primary-color;
+      line-height: 1em;
+    }
+  }
+  .triangle-badge-right {
+    width: 120px;
+    height: 120px;
+    background-color:$primary-color;
+    clip-path: polygon(0 0, 100% 100%, 100% 0);
+    position: absolute;
+    top: 0;
+    right: 0;
+    .badge-content {
+      position: absolute;
+      right: 15px;
+      top: 15px;
+      p {
+        margin-bottom: 0;
+        font-size: 20px;
+        color: #ffffff;
+        line-height: 1em;
+        text-transform: uppercase;
+      }
+    }
+  }
+  .banner-note {
+     background-color: rgba($primary-color, 0.1);
+     padding: 15px;
+     p{
+      color: $primary-color;
+      margin-bottom: 0;
+      font-family: ProximaBold;
+     }
+    
+  }
+  .banner-left {
+    background-color: #ffffff;
+    width: 500px;
+    max-width: 500px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 30px;
+    padding: 30px 40px 25px 40px;
+    text-align: left;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.19);
+    @media screen and (max-width: 991px) {
+      width: auto;
+    }
+  }
+  .banner-right {
+    background-color: #ffffff;
+    width: 500px;
+    max-width: 500px;
+    display: block;
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 30px;
+    padding: 30px 45px 50px 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.19);
+     @media screen and (max-width: 991px) {
+      width: auto;
+      left: 0;
+    }
+  }
+  .slick-dots li button {
+    background-color: rgba(#ffffff, 0.3);
+  }
+  .slick-dots li.slick-active button {
+    background-color: #ffffff;
+  }
+  .slick-dots {
+    bottom: 20px;
+  }
+  .slick-arrow {
+    height: 53px;
+    width: 39px;
+    background-color: $secondary-color;
+    margin-top: -26px;
+    padding: 0 10px;
+
+    svg {
+      position: relative;
+      top: -15px;
+    }
+
+    @media screen and (max-width: 991px) {
+      background-color: rgba(0,0,0,0);
+      padding: 0 20px;
+      margin-top: 0;
+      width: 50%;
+
+     svg {
+       top: -4px;
+     }
+      svg path {
+        stroke: $gray-text-medium;
+
+      }
+    }
+  }
+
+
+  .slick-buttons-contain {
+    position: relative;
+    .slick-prev {
+      left: 15px;
+      margin-top: -230px;
+    }
+    .slick-next {
+      right: 15px;
+      margin-top: -230px;
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+
+    .slick-buttons-contain {
+      .slick-prev {
+      left: 0;
+      margin-top: 0;
+    }
+    .slick-next {
+      right: 0;
+      margin-top: 0;
+    }
+      button:nth-of-type(2) {
+        justify-content: flex-end;
+      }
+    }
+    .slick-buttons-contain.container {
+      padding: 0;
+    }
+  }
+   @media screen and (max-width: 767px) {
+    .slick-arrow svg {
+      top: 2px;
+    }
+    h1 {
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+    p {
+      margin-bottom: 10px;
+    }
+    .banner-left, .banner-right {
+      padding: 20px;
+      margin-left: 0;
+     
+    }
+    .banner-right {
+       right: 0;
+
+    }
+
+     .triangle-badge-right {
+    width: 90px;
+    height: 90px;
+    
+    .badge-content {
+      position: absolute;
+      right: 15px;
+      top: 15px;
+      p {
+        margin-bottom: 0;
+        font-size: 14px;
+        color: #ffffff;
+        line-height: 1em;
+        text-transform: uppercase;
+      }
+    }
+  }
+   }
+}

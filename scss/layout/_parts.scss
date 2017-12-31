@@ -1,0 +1,76 @@
+﻿.ui [class*="col-"] {
+	/*padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: $contrast-color;
+    border: 1px solid $border-color;
+    font-weight: 700;
+    text-align: center;*/
+}
+
+.video-container { 
+	position: relative;
+	margin: 20px 0;
+	width: 100%; 
+
+	&.video-iframe { 
+		padding-bottom: 56.25%;
+		height: 0;
+		overflow: hidden; 
+	}  
+
+	iframe, object, embed {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}  
+
+	i.fa { 
+		margin-top: -35px;
+		margin-left: -35px;
+		position: absolute;
+		font-size: 25px;
+		line-height: 50px;
+		top: 50%;
+		left: 50%; 
+		text-align: center;
+		border-radius: 40px;
+
+		&.fa-play {
+			color: #fff;
+			background: #1f1f1f;
+			width: 50px;
+			height: 50px;
+			opacity: .81;
+
+			&:before {
+				position: absolute;
+				left: 50%;
+				margin-left: -7px;
+				margin-top: 1px;
+			}
+		}
+	}
+
+	img {
+		width: 100%;
+	}
+
+	&:hover {
+		cursor: pointer;
+
+		i.fa {
+			background: #cc181e;
+			opacity:1;
+		}
+	}
+}
+
+.sf-img-contain {
+	margin: 20px 0;
+}
+
+.classname {
+    
+} 

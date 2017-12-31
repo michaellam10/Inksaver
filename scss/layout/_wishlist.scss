@@ -1,0 +1,226 @@
+.wishlist-contain {
+    margin-bottom: 40px;
+    .page-header h1 {
+        float: left;   
+    }
+    .page-header .btn {
+        float: right;
+        @extend .btn-fill;   
+    }
+    .page-filter-sorting {
+        float: right;
+        width: auto;   
+    }
+    .btn-wishlist-remove {
+        color: $title-color;
+        background: none;
+        margin-bottom: 0;
+        display: block;
+       
+        padding: 0; 
+
+        &:hover {
+            color: $error-color;
+        }
+    }
+}
+
+.wishlist {
+
+  
+    > li {
+        @extend .boxed;
+     
+        font-size: 14px;
+        float: none;
+    }
+    h2 {
+        font-size: 16px;   
+        margin: 0;
+    }
+    .wishlist-detail {
+        float: left;   
+        width: 60%;
+    }
+    .product-box-price {
+        font-size: 14px;   
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+    .item-in-stock, .item-no-stock {
+        display: inline-block;
+        width: auto;
+        float: none;
+        position: relative;
+        margin-left: 5px;
+        margin-bottom: 0;
+        padding-left: 10px;
+        font-size: 12px;
+        top: -1px;
+        
+        &:before {
+            content: '';
+            width: 1px;
+            background: $border-color;
+            height: 16px;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }   
+
+        .fa {
+            font-size: 14px;   
+            margin-top: 1px;
+        }
+    }
+   
+    .wishlist-sku {
+        margin: 5px 0 10px 0;
+        display: block;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: $text-color;   
+        font-size: 12px;
+    }
+    .product-img-contain {
+           float: left;
+        margin: 0 30px 0 0;   
+    }
+    .product-box-img {
+        height: 130px;
+        width: 130px;    
+          
+    }
+    .btn {
+        display: block;
+        margin-bottom: 15px;
+        padding-right: 20px;
+        padding-left: 20px;
+        
+        &:last-child {
+            margin: 0;   
+        }
+    }
+
+     .btn-product-remove {
+        color: $title-color;
+        background: none;
+        margin-bottom: 0;
+        padding: 0; 
+
+
+        &:hover {
+            color: $error-color;
+        }
+    }
+     .wishlist-date {
+        color: $text-color;
+        display: block;
+        margin: 15px 0 10px 0;   
+        text-align: center;
+     }
+     .wishlist-item-remove {
+        @extend .boxed-item-remove;   
+     }
+
+     .btn-compare .fa {
+        margin-right: 8px;   
+     }
+}
+
+
+// md
+@media (min-width: 992px) and (max-width: 1199px) {
+    .wishlist .product-box-img {
+        height: 80px;
+        width: 80px;   
+    }
+}
+
+
+
+// sm
+@media (min-width: 768px) and (max-width: 991px) {
+     .wishlist .product-img-contain {
+        width: 20%;
+        margin-right: 20px;
+    }
+    .wishlist .product-box-img {
+        height: 72px;
+        width: 100%;
+    }
+    .wishlist .pull-right {
+        float: none!important;  
+    }
+    .wishlist .wishlist-date {
+        margin: 15px 0;
+         font-size: 12px;   
+        padding-top: 15px;
+        border-top: solid 1px $border-color;   
+    }
+    .wishlist .item-in-stock, .wishlist .item-no-stock {
+        display: block;
+        margin-left: 0;
+        padding-left: 0;
+        margin-bottom: 10px;
+
+        &:before {
+            display: none;
+        }
+    }
+    .wishlist h2 {
+        font-size: 14px;   
+    }
+
+    .wishlist-contain .page-filter-sorting {
+        float: left;
+        width: 100%;
+        margin-top: 20px;   
+    }
+    .wishlist-detail li {
+        font-size: 12px;   
+    }
+}
+
+// xs
+@media (max-width: 767px) {
+    .wishlist .product-img-contain {
+        width: 20%;
+        margin-right: 20px;
+    }
+    .wishlist .product-box-img {
+        height: 72px;
+        width: 100%;
+    }
+    .wishlist .pull-right {
+        float: none!important;  
+    }
+    .wishlist .wishlist-date {
+        margin: 15px 0;
+         font-size: 12px;   
+        padding-top: 15px;
+        border-top: solid 1px $border-color;   
+    }
+    .wishlist .item-in-stock, .wishlist .item-no-stock {
+        display: block;
+        margin-left: 0;
+        padding-left: 0;
+        margin-bottom: 10px;
+
+        &:before {
+            display: none;
+        }
+    }
+    .wishlist h2 {
+        font-size: 14px;   
+    }
+
+    .wishlist-contain .page-filter-sorting {
+        float: left;
+        width: 100%;
+        margin-top: 20px;   
+    }
+    .wishlist-detail li {
+        font-size: 12px;   
+    }
+}

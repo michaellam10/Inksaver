@@ -1,0 +1,23 @@
+.header-b {
+
+	&.masthead {
+		position: relative;
+		z-index: 4;
+	}
+
+	.sub-bar {
+		padding: 16px 0;
+	}
+	// sm
+	@media (min-width: 768px) and (max-width: 991px) {
+		.sub-bar {
+			padding: 0;
+		}
+	}
+	// xs
+	@media (max-width: 767px) {
+		.sub-bar {
+			padding: 0;
+		}
+	}
+}

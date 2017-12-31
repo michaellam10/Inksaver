@@ -1,0 +1,129 @@
+.droparea-contain {
+    position: relative;
+}
+
+.droparea {
+    border: dashed 2px $border-color;
+    cursor: pointer;
+    min-height: 261px;
+    text-align: center;
+    position: relative;
+}
+
+.droparea-w-image {
+
+    @include cover;  
+    
+    .droparea-wrap {
+     @include background-opacity(#fff, 0.8);
+        border: dashed 2px $border-color;
+    left: 50%;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: -55px;
+    width: 50%;
+    margin-left: -25%;   
+    } 
+
+    .droparea .fa {
+        color: $primary-color;   
+    }
+}
+
+.droparea-wrap {
+    top: 50%;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    margin-top: -55px;   
+}
+
+.droparea .fa {
+    color: lighten($text-color,35%);
+    font-size: 28px;
+    margin: 0 0 12px 0;
+}
+
+.droparea h3 {
+    margin: 0 0 4px 0;
+    color: $text-color;
+    
+}
+.droparea span {
+
+    color: $text-color;
+}
+.droparea span a {
+    color: $primary-color;
+}
+
+
+.droparea-dragging {
+	border: dashed 2px $border-color;
+	background: $contrast-color!important;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+
+.statusbar {
+	position: absolute;
+    top: 0!important;
+    left: 0!important;
+    width: 100%!important;
+    height: 100%!important;
+	background-color: rgba(0,0,0,0.4);
+	vertical-align: middle;
+	cursor: default;
+    z-index: 3;
+}
+
+.statusbar>.filename,
+.statusbar>.filesize {
+	color: white;
+	
+}
+
+.statusbar>.filename {
+	margin-top: 10%;
+}
+
+.statusbar>.progressbar {
+	color: darken($success-color, 40%);
+	
+	margin: 10px 20px;
+	text-align: center;
+}
+
+.statusbar>.progressbar>div {
+	background-color: lighten($success-color, 42%);
+}
+
+.statusbar>.progressbar.droparea-fail>div {
+	background-color: lighten($error-color, 32%);
+}
+
+.statusbar .btn {
+	font-size: 14px;
+    letter-spacing: .8px;
+   
+    text-transform: uppercase;
+    padding: 13px 25px 14px 25px;
+    border: none;
+    float: none;
+    border-radius: 0;
+    background: #14c990;
+    color: #fff!important;
+    margin: 20px auto;
+    box-shadow: none;
+	
+}
+// md
+@media (min-width: 992px) and (max-width: 1199px) {
+    .directory-droparea .droparea {
+        min-height: 239px;
+}
+}

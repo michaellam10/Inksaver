@@ -1,0 +1,49 @@
+.breadcrumb {
+    background: none;   
+    padding: 0;
+    margin: 0;
+}
+
+.breadcrumb a {
+    color: $text-color;  
+   
+}
+
+.breadcrumb li {
+ 
+    float: left;
+}
+
+.breadcrumb a:hover {
+   color: $title-color;     
+}
+
+.breadcrumb li.active a {
+    color: $title-color; 
+}
+
+.breadcrumb-contain {
+    margin: 27px 0 23px 0;   
+}
+
+.breadcrumb li:last-child {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 280px;   
+}
+
+
+.breadcrumb > li + li:before {
+    padding: 0 4px 0 9px;
+}
+
+// xs
+@media (max-width: 767px) {
+    .breadcrumb-contain {
+        margin-top: 12px;   
+    }
+    .breadcrumb li:last-child {
+        max-width: 162px;   
+    }
+}

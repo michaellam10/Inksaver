@@ -1,0 +1,64 @@
+﻿.header-a {
+
+	.mini-search {
+		float: right;
+		margin-left: 29px;
+		padding-right: 47px;
+		margin-top: 5px;
+		position: relative;
+		margin-right: -7px;
+		font-size: 14px;
+		border: solid 1px $border-color;
+
+		input {
+			border: none;
+			height: 42px;
+			padding-left: 15px;
+			padding-right: 15px;
+
+			&:focus {
+				outline: none;
+			}
+		}
+
+		.btn {
+			position: absolute;
+			right: 0;
+			top: 0;
+			font-size: 14px;
+			height: 42px;
+			line-height: 42px;
+			padding: 0 17px;
+			background: none;
+			color: $text-color;
+			border-left: solid 1px $border-color;
+
+			.fa {
+				margin: 0;
+			}
+		}
+	}
+	// sm
+	@media (min-width: 768px) and (max-width: 991px) {
+		.mini-search {
+			float: none;
+			margin-left: 0;
+			margin-right: 0;
+		}
+
+		.mini-search input {
+			width: 100%;
+		}
+	}
+	// xs
+	@media (max-width: 767px) {
+		.mini-search {
+			float: none;
+			margin: 0;
+		}
+
+		.mini-search input {
+			width: 100%;
+		}
+	}
+}

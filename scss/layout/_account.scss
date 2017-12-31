@@ -1,0 +1,1398 @@
+
+.account-contain {
+
+   .btn-split-col {
+       border-top: solid 2px lighten($border-color, 7%);
+	padding-top: 20px;
+	margin-top: 30px;
+
+        .btn {
+            float: right;   
+        }   
+        .btn-cancel-order {
+            @extend .btn-lite;
+            float: left;  
+            margin-top: 13px;
+
+            &:hover, &:focus {
+                color: $error-color;   
+            }
+        } 
+   }
+   
+   .btn-split-left {
+        float: left;   
+        margin-top: 15px;
+   }
+
+   .lnk-forgot-password {
+        margin-top: 42px;   
+   }
+
+ 
+}
+
+
+.account-filter-contain {
+    padding-top: 40px;   
+}
+
+.account-content-contain {
+    padding-top: 10px;   
+
+    .btn {
+     margin-top: 10px;   
+    }
+}
+
+.account-filter {
+    h3 {
+        margin: 0; 
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: 600;
+      
+
+        a {
+            color: $title-color;
+            background: $contrast-color;
+            padding: 14px 15px 11px 15px;
+            display: block;
+            white-space: nowrap;
+            overflow: hidden;
+            position: relative;
+            text-overflow: ellipsis;
+
+            .fa {
+                margin-right: 8px;   
+            }
+        }
+    }   
+
+    .panel {
+        margin: 0;
+        border: none;   
+        @include box-shadow(none);
+        @include border-radius(0);
+    }
+
+    .panel-heading {
+        padding: 0;   
+        background: none;
+        border: none;
+        
+    }
+    
+    .panel-body {
+        padding: 5px 0 20px 0;
+        
+    }
+
+    ul {
+ 
+
+        a {
+           color: $title-color;  
+            padding: 9px 55px 5px 10px;
+            display: block;
+            white-space: nowrap;
+            overflow: hidden;
+            position: relative;
+            text-overflow: ellipsis;   
+
+            &:hover {
+                color: $secondary-color;
+            }
+
+        }
+
+        li.active a {
+            color: $secondary-color;
+            font-weight: 700;   
+        }
+    }
+   
+}
+
+.account-content {
+    padding-left: 30px;  
+    
+    .page-filter-sorting {
+        margin-bottom: 30px;   
+    } 
+
+    .pagination {
+        float: right;
+        margin: 0 0 20px 0;   
+    }
+
+    nav {
+        width: 100%;
+        float: left;
+           
+    }
+
+.page-filter-fields.filter-by {
+    float: left;
+}   
+
+.page-filter-fields.filter-by .form-group {
+    margin-left: 0;   
+}
+
+div.panel-notification {
+    border: none;
+    
+}
+}
+
+.lnk-view-timeline {
+    color: $primary-color;
+    display: block;
+    margin-bottom: 20px;
+   text-decoration: underline;
+
+    &:hover, &:focus {
+        color: darken($primary-color, 10%);   
+    }
+}
+
+.account-header, .account-sub-header { 
+    border-bottom: solid 2px lighten($border-color, 7%);
+	padding-bottom: 20px;
+	margin-bottom: 30px;
+    margin-top: 30px;
+   
+    position: relative;
+
+     h2 {
+        font-size: 18px;
+        display: inline-block;
+        margin: 0 10px 0 0;
+
+        span {
+            font-weight: 400;   
+        }
+    }   
+
+    a {
+        @extend .lnk-default;
+        display: inline-block;   
+    }
+
+    .btn {
+       color: #fff;
+       float: right;
+
+       &:hover, &:focus {
+            color: #fff;   
+       }
+    }
+   
+    p {
+       margin-top: 10px;
+       clear: both;
+        margin-bottom: 0;
+    }
+}
+
+
+.account-sub-header {
+    border: none;   
+    padding-bottom: 0;
+    margin-bottom: 15px;
+
+    h2 {
+        font-size: 16px;
+        padding-bottom: 0;
+        margin-bottom: 0;   
+    }
+
+    p {
+        margin-top: 10px;   
+    }
+}
+
+.account-confirmation-page .checkbox {
+    margin-top: 30px;   
+}
+
+.account-section {
+    padding: 0 0 40px 0;
+    clear: both;
+}
+
+.voucher {
+    margin-bottom: 30px;
+    position: relative;
+    clear: both;
+    .voucher-image {
+           @include cover;
+    }
+     
+
+     h3 {
+        font-weight: 600;
+        margin-top: 0;
+    }
+
+    .voucher-detail {
+        text-align: left;
+        padding: 20px;
+        border-left: solid 1px $border-color; 
+        border-right: solid 1px $border-color; 
+         
+    }
+
+    .voucher-footer {
+         text-align: left;
+        clear: both;
+        padding: 17px 20px 13px 20px;
+        font-size: 12px;
+        background: $contrast-color;
+          border-left: solid 1px $border-color; 
+        border-right: solid 1px $border-color; 
+        border-bottom: solid 1px $border-color; 
+
+    }
+}
+
+.coupon {
+    margin-bottom: 30px;
+    position: relative;
+    clear: both;
+    border: solid 1px $border-color;   
+
+    h3 {
+        font-weight: 600;
+        margin-top: 0;
+    }
+
+    .coupon-stamp {
+        position: absolute;
+        left: 50%;
+        top: 39%;
+        font-weight: 700;
+        display: block;
+            margin-left: -93px;
+        text-transform: uppercase;
+        font-size: 40px;
+        -webkit-transform: rotate(-35deg);
+        -moz-transform: rotate(-35deg);
+        -ms-transform: rotate(-35deg);
+        -o-transform: rotate(-35deg);
+        transform: rotate(-35deg);
+
+        &.stamp-redeemed {
+            color: $success-color;   
+        }
+        &.stamp-expired {
+            color: $error-color;   
+        }
+
+    }
+}
+
+.coupon-detail {
+    padding: 20px;
+}
+.coupon-detail p {
+    margin-bottom: 20px;
+    max-height: 66px;
+    overflow: hidden;
+}
+.coupon-image {
+    float: left;
+    width: 160px;
+    height: 160px;
+    overflow: hidden;
+    margin: 0 20px 0 0;
+    border: solid 1px $border-color;
+}
+
+.coupon-date {
+    color: lighten($text-color, 20%);
+    display: block;
+    margin-top: -5px;
+    margin-bottom: 12px;
+}
+.coupon-image img {
+    max-width: 160px;
+    min-height: 160px;
+    object-fit: cover;
+}
+
+.coupon-footer {
+    clear: both;
+    padding: 17px 20px 13px 20px;
+    font-size: 12px;
+    background: $contrast-color;
+}
+
+.coupon-tag {
+    display: block;
+
+    .fa {
+        margin-right: 8px;   
+    }
+}
+
+.coupon-redeemed {
+    color: $success-color;
+    float: left;
+}
+
+.coupon-not-redeemed {
+    color: $error-color;
+    float: left;
+}
+
+.coupon-expires {
+    color: $text-color;
+    float: right;
+}
+
+.slick-nav {
+    margin-bottom: 40px; 
+    text-align: center;
+    border-bottom: solid 1px $border-color;
+
+    .container {
+        position: relative;   
+    }
+
+    .slick-slide {
+        margin: 0 8px;   
+       
+    }
+
+   
+    .slick-slide a {
+        padding: 25px 0;
+        display: block;   
+      
+        text-align: center;
+        text-transform: uppercase;
+        color: $text-color;
+        font-weight: 600;
+    
+
+        &:hover, &:focus {
+            color: $title-color;   
+        }
+
+        &.active {
+           color: $primary-color;   
+           border-bottom: solid 2px $primary-color;    
+        }
+    }
+
+    .slick-arrow {
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        margin-top: -17px;
+        z-index: 1;
+      
+    }
+
+    .slick-nav-prev {
+        left: 9px;   
+    }
+
+    .slick-nav-next {
+        right: 9px;   
+    }
+
+}
+
+.order-summary {
+    
+    float: left;
+    width: 100%;
+  
+    
+   
+    .order-summary-body {
+          padding: 20px;
+        color: $text-color;
+           background: $contrast-color;   
+    }
+    .order-summary-status {
+        border: solid 1px $contrast-color;
+        padding: 15px 15px 12px 15px;
+            margin-bottom: 30px;
+
+            .fa {
+                margin-right: 8px;   
+            }
+    }
+
+    .order-summary-field li {
+        margin-bottom: 10px;
+        padding: 5px 0;
+        
+        &:last-child {
+            margin: 0;   
+        }   
+    }
+
+    .order-summary-field li label {
+        display: inline-block;
+        padding: 0;
+        width: 125px;
+        margin: 0;
+    }
+
+    .order-summary-field li span {
+        display: inline-block;   
+    }
+
+    .order-summary-total {
+
+        label, span {
+            font-weight: 600;   
+        }
+    }
+   
+    .order-summary-btns a {
+          display: block;
+          float: right;
+          width: 45px;
+          height: 45px;
+          line-height: 45px;
+          text-align:center;
+          color: $text-color;
+          cursor: pointer;
+          border: solid 1px darken($contrast-color, 10%);
+          margin-left: 10px;
+          background: #fff;
+          @include border-radius(50%);
+
+          &.os-cancel-order {
+               &:hover, &:focus {
+               color: $error-color;
+            }   
+          }
+           &.os-make-payment {
+               &:hover, &:focus {
+               color: $success-color;
+            }   
+          }
+            &.os-view-order {
+               &:hover, &:focus {
+               color: $info-color;
+            }   
+          }
+    }
+}
+
+
+
+.order-detail-list {
+    float: left;
+    width: 100%;
+  
+   > li {
+        @extend .boxed;
+        font-size: 14px;
+        float: none;
+    }
+    h2 {
+        font-size: 16px;   
+        margin: 0;
+    }
+    .order-detail {
+        float: left;   
+        width: 60%;
+    }
+    .detail-price-main {
+        font-weight: 600;   
+    }
+    .detail-price, .detail-price-main {
+        font-size: 14px;   
+        display: block;
+        margin-bottom: 5px;
+        color: $text-color;
+    }
+   
+    .order-detail-sku {
+        margin: 5px 0 10px 0;
+        display: block;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: $text-color;   
+     
+    }
+    .product-img-contain {
+           float: left;
+        margin: 0 30px 0 0;   
+    }
+    .product-box-img {
+        height: 100px;
+        width: 100px;    
+          
+    }
+    .detail-qty {
+        margin-bottom: 5px;
+    }
+   .detail-qty {
+      
+        display: block;   
+
+     
+   }
+
+  .status-badge {
+    margin-bottom: 15px;
+    display: block;   
+  }
+}
+
+
+.order-detail-total {
+    float: right;
+    
+    li {
+        margin-bottom: 10px;   
+        text-align: right;
+
+        &:last-child {
+            margin: 0;   
+        }
+    }
+
+    label {
+        padding: 0;
+        min-width: 80px;
+        display: inline-block;   
+    }   
+
+    .order-detail-price {
+        color: $title-color;
+        label, span {
+            font-weight: 600;   
+        }
+    }
+}
+
+
+.order-detail-header {
+    @extend .clearfix;
+     h2, .order-detail-date {
+         float: left;  
+     }
+     .status-badge {
+        float: right;   
+        margin-top: -2px;
+    }
+
+     .order-detail-date {
+        display: inline-block;
+        color: lighten($text-color, 20%);
+        position: relative;
+        top: 3px;
+    }
+
+}
+
+.account-contain .account-btn-header {
+     @extend .clearfix;
+    h2 {
+         float: left;  
+     }
+    .btn {
+    margin-top: -20px;
+        position: relative;
+    top: 12px;
+}
+}
+
+.order-tracker {
+    margin-bottom: 20px;
+    position: relative;
+
+    &:before {
+        content: '';   
+    }
+
+    li {
+        width: 24%;
+        display: inline-block;   
+        text-align: center;
+    }   
+
+    .order-step {
+        @include border-radius(50%);
+        width: 90px;
+        height: 90px;
+        display: inline-block;
+        margin-bottom: 10px;
+        vertical-align: top;
+        background: $contrast-color;
+        line-height: 90px;
+        font-size: 23px;
+    }
+
+    li.active .order-step {
+        color: darken($success-color, 40%);
+        background-color: lighten($success-color, 42%);   
+    }
+
+    span {
+        display: block;   
+        font-size: 12px;
+        color: $title-color;
+    }
+
+    .order-tracker-title {
+        height: 30px;
+    }
+    .order-tracker-time {
+        color: $text-color;
+    }
+    .order-tracker-date {
+        color: $text-color;
+    }
+}
+
+
+.directory-list {
+    float: left;
+    width: 100%;
+
+
+    h3 {
+        font-size: 16px;
+         font-weight: 600;
+    }
+   > li {
+        @extend .clearfix;
+      border: solid 1px $contrast-color;
+       margin-bottom: 30px;
+    }      
+
+    .directory-img {
+        @include cover;
+        height: 175px;
+        background-repeat: no-repeat;
+        background-image: url(https://source.unsplash.com/w2uvoJo_woE);   
+    }
+
+    .directory-detail {
+        p {
+            margin-bottom: 0;   
+        }
+        h3 {
+            margin-top: 0;
+            margin-bottom: 5px;
+        }
+        .directory-detail-inner {
+            padding: 30px 15px;
+        }
+    }
+
+    .directory-links {
+        font-size: 12px;
+        height: 175px;
+        background: $contrast-color;
+        .directory-links-inner {
+           padding: 30px 15px;
+        }
+
+        li {
+            color: $text-color;   
+            margin-bottom: 10px;
+            word-wrap: break-word;
+            padding-left: 20px;
+            position: relative;
+
+            &:last-child {
+                margin-bottom: 0;   
+            }
+            .fa {
+                position: absolute;
+                left: 0;
+                top: 4px;
+                color: $primary-color;
+                   
+            }   
+
+            a {
+                
+                color: $text-color;
+
+                &:hover {
+                    color: $primary-color;   
+                }
+
+            }
+        }
+    }
+
+    .directory-meta {
+        font-size: 11px;
+            text-transform: uppercase;
+            color: $secondary-color;
+            display: block;
+            margin-bottom: 5px;
+            letter-spacing: .5px;
+    }
+}
+
+
+
+textarea.directory-textarea {
+    height: 79px;   
+}
+
+.booking-type {
+    text-align: center;
+    display: block;
+    margin-bottom: 30px;
+    border: solid 2px lighten($border-color, 7%);
+    padding: 20px;
+
+    .fa {
+        font-size: 30px;
+        position: relative;
+        top: 10px;   
+    }
+    
+    i {
+        font-size: 35px;
+        height: 60px;
+        color: $title-color;
+        display: block;   
+    }   
+
+    .booking-type-title {
+        display: block;   
+        @extend h3;
+        margin-top: 0;
+    }
+
+    &:hover {
+        border-color: $primary-color;
+        
+        .booking-type-title, i {
+             color: $primary-color;
+        }
+    }
+}
+
+.booking-date-picker {
+    text-align: center;
+    color: $text-color;
+    
+    li {
+        
+        display: inline-block;
+    }   
+
+  
+
+    .booking-date-top {
+        
+        display: block;
+        color: $text-color;
+        padding: 14px 18px;
+
+    }
+
+    .booking-date-sub {
+        display: block;
+        padding: 14px 18px;
+        font-weight: 600;   
+        color: $title-color;
+
+    }
+
+    .booking-current-day .booking-date-sub {
+        padding-bottom: 12px;
+        border-bottom: solid 2px $primary-color;
+    }
+
+    .booking-active-day .booking-date-sub {
+        background: $primary-color;
+        color: #fff;
+    }
+
+     a {
+        display: block;
+
+        &:hover .booking-date-sub {
+            color: $primary-color;
+        
+           
+        }
+         
+        &.booking-active-day:hover .booking-date-sub {
+            color: #fff;
+        }
+    }
+
+}
+
+.booking-selected-day {
+    display: block;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 600;
+    color: $title-color;
+    margin: 30px 0;   
+}
+
+.booking-status {
+    color: lighten($text-color,22%);   
+}
+
+.booking-contain {
+    .btn {
+        margin: 0;   
+    }
+
+    .checkbox {
+        margin-top: 30px;   
+    }
+}
+.booking-table-contain {
+    max-height: 521px;
+   
+   height: 100%;
+    border: solid 1px $border-color;
+
+    .mCSB_inside>.mCSB_container {
+        margin-right: -2px;
+    }
+}
+
+.table-default.booking-table {
+    margin: 0;
+   
+    th, td {
+        border: none;
+        border-bottom: solid 1px $border-color;   
+    }
+
+    tr:last-child td {
+        border-bottom: none;   
+    }
+    
+}
+
+.booking-table a {
+    color: $primary-color;
+   text-decoration: underline;
+    
+    &:hover, &:focus {
+        color: darken($primary-color,10%);   
+    }   
+}
+
+.multi-datepicker {
+    .input-group.date .input-group-addon {
+        @include border-radius(0);   
+    }   
+
+    .input-group-addon {
+        padding-left: 15px;
+        padding-right: 15px;
+        background: $primary-color;
+        color: #fff;
+        border-color: $primary-color;
+
+        &:hover {
+            background-color: darken($primary-color,10%);   
+            border-color: darken($primary-color,10%);   
+        }
+    }
+
+   
+}
+
+.booking-field {
+   margin-bottom: 30px;
+  @extend .clearfix;
+
+   .booking-field-content {
+        float: left;   
+        margin-right: 60px;
+       
+        p strong {
+            color: $title-color;   
+            font-weight: 400;
+        }
+   }
+
+   a {
+        color: $primary-color;
+         margin-top: 62px;
+        text-decoration: underline;
+        float: left;
+
+        &:hover, &:focus {
+            color: darken($primary-color,10%);   
+        }
+   }
+}
+
+.notice-board {
+   margin: 30px 0;
+   padding-right: 20px;
+    .notice-board-col {
+        position: relative;
+        border-bottom: solid 1px $border-color;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+
+         &:nth-child(even) {
+             .fa {
+                background-color: lighten($info-color, 30%);
+	            color: darken($info-color, 40%);   
+            }
+           
+        }
+
+         .notice-day {
+            position: absolute;
+            top: 4px;
+            right: 0;
+            text-transform: uppercase;
+            font-size: 10px;
+               color: lighten($text-color,10%); 
+         }
+    }   
+
+    .fa {
+        float: left;
+        margin-right: 14px; 
+        width: 48px;
+        height: 48px;
+        @include border-radius(50%);
+        line-height: 48px;
+        font-size: 16px;
+        text-align: center;
+        background-color: lighten($success-color, 42%);
+	    color: darken($success-color, 40%);
+
+       
+    }
+    h3 {
+     @extend h4;   
+         max-width: 50%;
+     margin-bottom: 5px;
+     white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;   
+    }
+
+    p {
+        white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;   
+      margin: 0;
+          padding-right: 77px;
+          position: relative;
+
+          a {
+            position: absolute;
+            right: 0;
+            top: 0;   
+            color: $text-color;
+            text-decoration: underline;
+
+            &:hover {
+                color: $title-color;   
+            }
+          }
+    }
+}
+
+.events-contain .account-sub-header a {
+     font-weight: 400;
+     text-decoration: underline;
+     font-size: 14px;
+     margin-left: 8px;
+     display: inline-block;  
+}
+
+// md
+@media (min-width: 992px) and (max-width: 1199px) {
+    .coupon-detail .btn {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .coupon-tag .fa {
+        margin-right: 4px;   
+    }
+    .order-summary .order-summary-field li label {
+        display: block;   
+    }
+    .order-summary .order-summary-btns a {
+        margin-right: 8px;
+        margin-left: 0;
+    }
+    .voucher-footer .coupon-not-redeemed {
+        display: block;
+        float: none;   
+        margin-bottom: 10px;
+    }
+    .voucher-footer .coupon-redeemed {
+        display: block;
+        float: none;   
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .voucher-footer .coupon-expires {
+        display: block;
+        float: none;   
+        width: 100%;
+    }
+
+    .order-tracker .order-tracker-title {
+        height: 40px;   
+    }
+    .directory-list .directory-links .directory-links-inner,
+    .directory-list .directory-detail .directory-detail-inner {
+        padding-right: 0;
+        padding-left: 0;   
+    }
+    .notice-board {
+        margin-bottom: 30px;   
+        padding-right: 0;
+    }
+    .notice-board .notice-board-col:last-child {
+        border: none;   
+    }
+}
+
+// sm
+@media (min-width: 768px) and (max-width: 991px) {
+     .order-summary .order-summary-btns {
+        margin-top: 15px;   
+     }
+    .order-summary .order-summary-field li label {
+        display: block;   
+    }
+    .order-summary .order-summary-btns a {
+        float: left;   
+        margin-left: 0;
+        margin-right: 10px;
+    }
+    .account-content .page-filter-sorting .form-group {
+    margin: 0 0 10px 0;
+    float: none;
+}
+   .account-content .page-filter-sorting .page-filter-fields {
+    float: none;
+}
+  .account-content .page-filter-sorting .control-label {
+        width: 70px;   
+   }
+
+  .order-detail-list .pull-right {
+        border-top: solid 1px $border-color;   
+        padding-top: 20px;
+        margin-top: 10px;
+  }
+  .order-detail-list .status-badge {
+    display: inline-block;   
+  }
+  .order-detail-list .order-detail {
+    width: 64%;   
+  }
+
+    .order-tracker .order-tracker-title {
+        height: 40px;   
+    }
+    .order-tracker .order-step {
+           width: 70px;
+    height: 70px;
+        line-height: 70px;
+    font-size: 18px;
+    }
+    .order-detail-header {
+        h2, .order-detail-date {
+           clear: both;
+           
+        }
+        .order-detail-date {
+       
+            margin-top: 5px;   
+        }
+
+        .status-badge {
+        margin-top: 0;
+        }
+    }
+    .account-contain .account-btn-header {
+    
+    h2 {
+        clear: both;
+     }
+}
+    .directory-list .directory-links {
+        height: auto;   
+    }
+    .directory-list .directory-img {
+        height: 147px;   
+    }
+    .notice-board {
+        padding-right: 0;
+        margin-bottom: 30px;   
+    }
+    .notice-board .notice-board-col:last-child {
+        border: none;   
+    }
+    .events-contain .account-sub-header a {
+    display: block;
+       margin: 0 0 -5px 0;
+}   
+}
+
+// xs
+@media (max-width: 767px) {
+    .account-header a {
+        display: block;
+        margin-top: 5px;   
+       
+    }
+   
+    .account-contain .btn-split-col {
+     text-align: center;   
+   
+    }
+    .account-contain .btn-split-col .btn-cancel-order {
+        float: none;
+          margin-bottom: 15px;
+      display: block;
+
+    }
+    .account-contain .btn-split-col .btn {
+        float: none;   
+     
+         display: block;
+    }
+    .coupon-image {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 20px;
+    }
+
+    .coupon-image img {
+        max-width: 80px;
+        min-height: 80px;
+    }
+
+
+    .coupon-tag {
+        float: none;
+        margin: 0 0 10px 0;
+
+        .fa {
+            float: left;
+            margin-bottom: 10px;
+            margin-top: 3px; 
+        }
+    }
+    .coupon-tag.coupon-expires {
+        margin-bottom: 0;   
+    }
+    .coupon .btn {
+        width: 100%;
+    }
+    .coupon .coupon-stamp {
+       
+        font-size: 30px;
+    }
+
+    .account-contain {
+  
+       .btn-split-left {
+            float: none;   
+       }
+
+       .lnk-forgot-password {
+           float: none;
+           margin-top: 18px;
+       
+       }
+    }
+    .slick-nav .slick-slide a {
+        font-size: 12px;   
+    }
+    .slick-nav .slick-nav-prev {
+        left: 2px;   
+    }
+     .slick-nav .slick-nav-next {
+        right: 2px;   
+    }
+     .coupon-detail p {
+
+    max-height: none;
+    overflow: initial;
+}
+     .account-content {
+        padding: 0;   
+     }
+     .order-summary .order-summary-btns {
+        margin-top: 15px;   
+     }
+      .order-summary .order-summary-btns a {
+        float: left;   
+        margin-left: 0;
+        margin-right: 10px;
+    }
+      .order-summary .order-summary-field li:last-child {
+        margin-bottom: 10px;   
+      }
+      .account-filter h3 a {
+        margin-bottom: 5px;   
+      }
+      .account-content .pagination {
+          float: none;
+          }
+      
+  .order-detail-list .pull-right {
+        border-top: solid 1px $border-color;   
+        padding-top: 20px;
+        margin-top: 10px;
+        float: left;
+        width: 100%;
+  }
+  .order-detail-list .status-badge {
+    display: inline-block;   
+  }
+  .order-detail-list .order-detail {
+    width: 64%;   
+  }
+
+   .order-detail-list .product-img-contain {
+        width: 20%;
+        margin-right: 20px;
+    }
+    .order-detail-list .product-box-img {
+        height: 72px;
+        width: 100%;
+    }
+    
+   
+    .order-detail-list h2 {
+        font-size: 14px;   
+    }
+    .order-detail-list li,
+    .order-detail-list .order-detail-sku,
+    .order-detail-list .detail-price, .order-detail-list .detail-price-main {
+        font-size: 12px;   
+    }
+    .account-content-contain, 
+    .account-filter-contain {
+        padding-top: 0;   
+    }
+    .order-detail-total {
+       
+        float: none;   
+     
+    }
+    .voucher {
+     text-align: center;   
+    }
+    .voucher-content {
+        display: inline-block;   
+        max-width: 360px;
+    }
+    .order-tracker li {
+        width: 100%;   
+    }
+    .order-tracker .order-step {
+        line-height: 50px;
+        height: 50px;
+        width: 50px;
+          float: left;
+          font-size: 16px;
+          text-align: center;
+          margin-right: 10px;
+    }
+    .order-tracker {
+        margin-bottom: 15px;   
+    }
+    .order-tracker li {
+        text-align: left;
+        margin-bottom: 15px;
+    }   
+
+    .order-tracker .order-tracker-time {
+        display: inline-block;   
+        position: relative;
+        padding-right: 12px;
+
+        &:after {
+            content: '-';
+            position: absolute;
+            right: 1px;
+            top: 0px;
+        }
+
+    }
+    .order-tracker .order-tracker-date {
+        display: inline-block;
+    }   
+    .order-tracker .order-tracker-title  {
+        height: auto;   
+        margin-top: 6px;
+    }
+ 
+    .account-contain .account-btn-header {
+ 
+    h2 {
+         clear: both;
+     }
+      .btn {
+    position: static;
+    float: left;
+    margin: 12px 0 0;
+    clear: both;
+}
+}
+      .order-detail-header {
+        h2, .order-detail-date {
+           clear: both;
+           
+        }
+        .order-detail-date {
+       
+            margin-top: 5px;   
+        }
+
+        .status-badge {
+       clear: both;
+         display: inline-block;
+         float: none;
+          margin-top: 0;
+        }
+    }
+
+
+       .directory-list .directory-links {
+        height: auto;   
+    }
+     
+       .directory-list .directory-img {
+        height: 147px;   
+    }
+     .booking-field a {
+        margin-top: 56px;   
+     }
+     .notice-board {
+        margin-bottom: 30px;   
+        padding-right: 0;
+    }
+    .notice-board .notice-board-col:last-child {
+        border: none;   
+    }
+        .events-contain .account-sub-header a {
+    display: block;
+       margin: 0 0 -5px 0;
+}   
+}

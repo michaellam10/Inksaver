@@ -1,0 +1,47 @@
+﻿.header-a {
+
+	.top-bar {
+		background: $contrast-color;
+
+
+		.dropdown-menu {
+			border-top: none;
+		}
+	}
+
+    .dropdown > a:hover, .dropdown:hover > a, .dropdown.open > a, .dropdown-menu li > a:hover {
+        color: $title-color;   
+    }
+
+    .utils {
+        display: inline-block;   
+
+        a {
+            color: $text-color;
+            display: inline-block;
+            margin-right: 15px;   
+
+            &:hover {
+               color: $title-color; 
+            }
+        }
+
+        .fa {
+            margin-right: 8px;   
+        }
+    }
+
+    // sm
+	@media (min-width: 768px) and (max-width: 991px) {
+        .utils {
+            display: none;   
+        }
+    }
+
+    // xs
+	@media (max-width: 767px) {
+        .utils {
+            display: none;   
+        }
+    }
+}

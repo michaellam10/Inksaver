@@ -1,0 +1,41 @@
+.tooltip {
+  font-family: $font-stack;
+  font-size: 12px;
+} 
+
+.tooltip.in {
+  @include opacity(1);
+}
+
+.tooltip-inner {
+  color: #fff;
+  background-color: darken($text-color, 15%);
+  @include border-radius(2px);
+  padding: 4px 8px 2px 8px;
+}
+
+.tooltip.top .tooltip-arrow {
+
+  border-top-color: darken($text-color, 15%);
+}
+.tooltip.top-left .tooltip-arrow {
+  border-top-color: darken($text-color, 15%);
+}
+.tooltip.top-right .tooltip-arrow {
+  border-top-color: darken($text-color, 15%);
+}
+.tooltip.right .tooltip-arrow {
+  border-right-color: darken($text-color, 15%);
+}
+.tooltip.left .tooltip-arrow {
+  border-left-color: darken($text-color, 15%);
+}
+.tooltip.bottom .tooltip-arrow {
+  border-bottom-color: darken($text-color, 15%);
+}
+.tooltip.bottom-left .tooltip-arrow {
+  border-bottom-color: darken($text-color, 15%);
+}
+.tooltip.bottom-right .tooltip-arrow {
+  border-bottom-color: darken($text-color, 15%);
+}

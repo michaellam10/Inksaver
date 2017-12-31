@@ -1,0 +1,65 @@
+
+// layout colors
+// =============
+$contrast-color:              #f1f5f7 !default;
+$primary-color:               #0FA0DA !default;
+$secondary-color:             #CF0974 !default;
+
+$gray-light:                  #DDDDDD !default;
+$gray-medium:                 #666666 !default;
+$gray-dark:                   #323232 !default;
+$border-color:                $gray-light !default;
+
+// text colors
+// =============
+$text-color:                  #989494 !default;
+$title-color:                 #575757 !default;
+$link-hover-text-color:       #575757 !default;
+$gray-text-light:             $gray-light !default;
+$gray-text-medium:            $gray-medium !default;
+$gray-text-dark:              $gray-dark !default;
+
+// badge colors
+// =============
+$top-pick-badge-background:   $secondary-color !default;
+$top-pick-text:               #fff !default;
+$sale-badge-background:       $primary-color !default;
+$sale-badge-text:             #fff !default;
+$no-stock-badge-background:   $title-color !default;
+$no-stock-badge-text:         #fff !default;
+
+// modal
+// =============
+$modal-backdrop:              #262e31 !default;
+
+
+// notification colors
+$success-color:               #2acd6f !default;
+$warning-color:               #ffc13d !default;
+$info-color:                  #3d9eff !default;
+$error-color:                 #e5584c !default;
+
+
+// mini cart
+// =============
+$mini-cart-count-text:        #fff !default;
+
+
+// buttons
+// =============
+$btn-text:                    #fff !default;
+
+
+// newsletter
+// =============
+$newsletter-icon-color:       #fff !default;
+$newsletter-title-color:      #fff !default;
+
+
+// stock
+// =============
+$item-in-stock-color:         #4b5862 !default;
+$item-no-stock-color:         #4b5862 !default;
+
+
+$max-colors:                  10!default;

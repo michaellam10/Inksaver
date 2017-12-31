@@ -1,0 +1,432 @@
+#notification {
+	padding: 0;
+	display: none;
+	z-index: 9999;
+}
+
+.alert {
+	@include border-radius(0);
+	text-align: left;
+	border: none;
+	padding: 17px 20px;
+
+	ul {
+		list-style: none;
+	}
+
+	li {
+		position: relative;
+		padding-left: 20px;
+
+		&:before {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 9px;
+			height: 2px;
+			width: 8px;
+		}
+	}
+
+	p {
+		margin-bottom: 0;
+	}
+
+    .fa {
+        margin-right: 8px;   
+    }
+}
+
+
+.alert-basic {
+	padding: 0;
+	margin: 5px 0 0;
+	background: none !important;
+
+	ul {
+		padding-left: 0;
+	}
+}
+
+.alert-danger {
+	background-color: lighten($error-color, 32%);
+	color: darken($error-color, 40%);
+
+	p, li {
+		color: darken($error-color, 40%);
+	}
+
+	li:before {
+		background-color: darken($error-color, 40%);
+	}
+}
+
+
+.alert-danger.alert-basic {
+	color: $error-color;
+
+	p, li {
+		color: $error-color;
+	}
+
+	li:before {
+		color: $error-color;
+	}
+}
+
+.alert-success {
+	background-color: lighten($success-color, 42%);
+	color: darken($success-color, 40%);
+
+	p, li {
+		color: darken($success-color, 40%);
+	}
+
+	li:before {
+		background-color: darken($success-color, 40%);
+	}
+}
+
+.alert-success.alert-basic {
+	color: $success-color;
+
+	p, li {
+		color: $success-color;
+	}
+
+	li:before {
+		color: $success-color;
+	}
+}
+
+.alert-warning {
+	background-color: lighten($warning-color, 26%);
+	color: darken($warning-color, 40%);
+
+	p, li {
+		color: darken($warning-color, 40%);
+	}
+
+	li:before {
+		background-color: darken($warning-color, 40%);
+	}
+}
+
+
+.alert-warning.alert-basic {
+	color: $warning-color;
+
+	p, li {
+		color: $warning-color;
+	}
+
+	li:before {
+		color: $warning-color;
+	}
+}
+
+
+
+.alert-info {
+	background-color: lighten($info-color, 30%);
+	color: darken($info-color, 40%);
+
+	p, li {
+		color: darken($info-color, 40%);
+	}
+
+	li:before {
+		background-color: darken($info-color, 40%);
+	}
+}
+
+.alert-info.alert-basic {
+	color: $info-color;
+
+	p, li {
+		color: $info-color;
+	}
+
+	li:before {
+		color: $info-color;
+	}
+}
+
+
+.ui-notify {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1071;
+    display: table;
+    padding: 20px 35px;
+    text-align: center;
+
+	.ui-notify-contain {
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	.btn {
+		text-decoration: none;
+        border: none;
+		margin-left: 20px;
+
+        &:hover {
+            border: none;   
+        }
+	}
+
+	.fa {
+		display: inline-block;
+		margin-right: 8px;
+		font-size: 16px;
+	}
+
+	p {
+		display: inline-block;
+		margin: 0;
+
+		a {
+			text-decoration: underline;
+		}
+	}
+
+	.notify-close {
+		font-size: 14px;
+		position: absolute;
+		right: 10px;
+		top: 10px;
+		cursor: pointer;
+	}
+}
+
+.ui-notify.success, .ui-notify.cart {
+	background: lighten($success-color, 42%);
+
+	p {
+		color: darken($success-color, 40%);
+
+		a {
+			color: darken($success-color, 40%);
+		}
+	}
+
+	.btn {
+		background: darken($success-color, 32%);
+		color: lighten($success-color, 42%);
+
+		&:hover {
+			background: darken($success-color, 42%);
+		}
+	}
+}
+
+.ui-notify.success {
+
+	.btn-co, .btn-view-cart {
+		display: none;
+	}
+}
+
+.alert-success, .ui-notify.success, .ui-notify.cart {
+	.notify-close {
+		color: darken($success-color, 25%);
+
+		&:hover {
+			color: darken($success-color, 40%);
+		}
+	}
+}
+
+.ui-notify.cart {
+
+	.btn-ok {
+		display: none;
+	}
+}
+
+.ui-notify.info {
+	background-color: lighten($info-color, 30%);
+
+	p {
+		color: darken($info-color, 40%);
+
+		a {
+			color: darken($info-color, 40%);
+		}
+	}
+
+	.btn {
+		background: darken($info-color, 40%);
+		color: lighten($info-color, 30%);
+
+		&:hover {
+			background: darken($info-color, 50%);
+		}
+	}
+
+	.btn-co, .btn-view-cart {
+		display: none;
+	}
+}
+
+.alert-info, .ui-notify.info {
+	.notify-close {
+		color: darken($info-color, 35%);
+
+		&:hover {
+			color: darken($info-color, 45%);
+		}
+	}
+}
+
+.ui-notify.error {
+	background-color: lighten($error-color, 32%);
+
+
+	p {
+		color: darken($error-color, 40%);
+
+		a {
+			color: darken($error-color, 40%);
+		}
+	}
+
+	.btn {
+		background: darken($error-color, 40%);
+		color: lighten($error-color, 32%);
+
+		&:hover {
+			background: darken($error-color, 50%);
+		}
+	}
+
+	.btn-co, .btn-view-cart {
+		display: none;
+	}
+}
+
+.alert-error, .ui-notify.error {
+	.notify-close {
+		color: darken($error-color, 38%);
+
+		&:hover {
+			color: darken($error-color, 48%);
+		}
+	}
+}
+
+.ui-notify.warning {
+	background-color: lighten($warning-color, 26%);
+
+
+	p {
+		color: darken($warning-color, 40%);
+
+		a {
+			color: darken($warning-color, 40%);
+		}
+	}
+
+	.btn {
+		background: darken($warning-color, 40%);
+		color: lighten($warning-color, 26%);
+
+		&:hover {
+			background: darken($warning-color, 50%);
+		}
+	}
+
+	.btn-co, .btn-view-cart {
+		display: none;
+	}
+}
+
+.alert-warning, .ui-notify.warning {
+	.notify-close {
+		color: darken($warning-color, 38%);
+
+		&:hover {
+			color: darken($warning-color, 48%);
+		}
+	}
+}
+
+div.panel-notification {
+	text-align: center;
+	padding: 40px 20px;
+    margin-bottom: 30px;
+    float: none;
+
+	> .fa {
+		color: $text-color;
+		margin: 0 0 20px 0;
+		width: 65px;
+		height: 65px;
+		border-radius: 50%;
+		line-height: 65px;
+		font-size: 22px;
+		text-align: center;
+		background: $contrast-color;
+	}
+
+	p strong {
+		color: $title-color;
+		font-size: 16px;
+		font-weight: 600;
+	}
+
+	a {
+		@extend .lnk-default;
+	}
+}
+
+// sm
+@media (min-width: 768px) and (max-width: 991px) {
+	.ui-notify.success p {
+		display: block;
+	}
+
+	.ui-notify.success .btn {
+		margin: 10px 0 0;
+	}
+}
+
+// xs
+@media (max-width: 767px) {
+	.ui-notify.success p {
+		display: block;
+	}
+
+	.ui-notify.success .btn {
+		margin: 10px 0 0;
+	}
+
+	.ui-notify.error p {
+		display: block;
+	}
+
+	.ui-notify.error .btn {
+		margin: 10px 0 0;
+	}
+
+	.ui-notify.info p {
+		display: block;
+	}
+
+	.ui-notify.info .btn {
+		margin: 10px 0 0;
+	}
+
+	.ui-notify.warning p {
+		display: block;
+	}
+
+	.ui-notify.warning .btn {
+		margin: 10px 0 0;
+	}
+
+	
+}

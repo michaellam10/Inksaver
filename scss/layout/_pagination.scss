@@ -1,0 +1,52 @@
+
+
+.pagination > li > a {
+    border: none;
+    color: $title-color;
+   
+     padding: 12px 18px 13px 18px;
+    margin: 0 0 0 4px;
+   
+    &:hover {
+        background: $contrast-color;   
+    }
+}
+
+.pagination > .active > a {
+    color: #fff;
+    background: $primary-color;
+
+
+}
+
+.pagination > li:first-child > a, .pagination > li:first-child > span,
+.pagination > li:last-child > a, .pagination > li:last-child > span {
+   
+   @include border-radius(0);
+}
+
+
+.pagination > .active > a:hover,
+.pagination > .active > a:focus {
+        background: darken($primary-color, 10%);   
+}
+
+.pagination > li > a:hover {
+    color: $title-color;
+    background: $contrast-color;   
+}
+
+.pagination > .disabled > a, 
+.pagination > .disabled > a:hover {
+    color: $text-color;   
+}
+
+.pagination > li.pagination-select {
+
+    
+   .select2-container {
+        padding: 0!important;
+        border: none!important;   
+        margin-left: 4px;
+   }
+}

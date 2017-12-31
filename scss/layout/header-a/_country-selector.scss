@@ -1,0 +1,40 @@
+.header-a {
+
+	.btn-country-selector {
+		background: none;
+		margin-top: 7px;
+        margin-right: 15px;
+		padding: 7px 0;
+		color: $text-color;
+
+		.flag-sm {
+			float: left;
+			margin: 2px 8px 0 0;
+		}
+
+		.country-currency-name {
+		}
+
+		.country-currency-code {
+		}
+
+		&:hover {
+			color: $title-color;
+		}
+	}
+	// xs
+	@media (max-width: 767px) {
+		.btn-country-selector {
+			font-size: 12px;
+			margin-top: 9px;
+		}
+
+        .country-currency-code {
+            display: none;   
+        }
+
+		.btn-country-selector .flag-sm {
+			margin-top: 1px;
+		}
+	}
+}

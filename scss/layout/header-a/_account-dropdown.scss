@@ -1,0 +1,98 @@
+﻿.header-a {
+
+	.account-dropdown {
+		float: right;
+		margin-left: 20px;
+
+		> li {
+			display: inline-block;
+		}
+
+		> li > a {
+			color: $text-color;
+			padding: 15px 0 14px 0;
+			display: inline-block;
+
+			.fa {
+				margin-left: 8px;
+				font-size: 9px;
+				position: relative;
+				top: -2px;
+			}
+		}
+
+		.dropdown-menu {
+			right: 0;
+			left: auto;
+			min-width: 200px;
+
+			.btn {
+				margin-top: -1px;
+				display: block;
+				margin-bottom: 15px;
+				@extend .btn;
+			}
+		}
+
+		.dropdown-menu li .fa {
+			float: right;
+			margin-top: 3px;
+		}
+	}
+
+	.user-name-switch {
+		white-space: nowrap;
+		overflow: hidden;
+		float: left;
+		max-width: 170px;
+		text-overflow: ellipsis;
+	}
+
+	.account-lnk-sign-in {
+		padding-right: 10px;
+		position: relative;
+
+		&:after {
+			content: '';
+			width: 1px;
+			height: 17px;
+			position: absolute;
+			right: -2px;
+			top: 17px;
+			background: $border-color;
+		}
+
+		a:hover {
+			color: $primary-color;
+		}
+	}
+
+	.account-lnk-register {
+		padding-left: 10px;
+
+		a:hover {
+			color: $primary-color;
+		}
+	}
+	// xs
+	@media (max-width: 767px) {
+
+		.account-dropdown {
+			margin-left: 22px;
+		}
+
+		.account-dropdown > li > a {
+			padding-top: 16px;
+			padding-bottom: 16px;
+			font-size: 12px;
+		}
+
+		.user-name-switch {
+			max-width: 70px;
+		}
+
+		.account-dropdown .dropdown-menu li > a {
+			font-size: 12px;
+		}
+	}
+}

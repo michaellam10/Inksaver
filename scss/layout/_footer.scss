@@ -1,0 +1,195 @@
+.footer-top {
+    padding: 60px 0 40px 0;
+    position: relative;
+    border-top: solid 1px $border-color;
+}
+
+
+.footer-title {
+    margin: 0 0 10px 0;
+    display: block;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: $title-color;
+}
+
+.footer-list {
+    margin-bottom: 15px;   
+}
+
+.footer-list li {
+    padding: 5px 0;
+   
+}
+
+.footer-list a {
+    color: $title-color;
+}
+
+.footer-list a:hover,
+.footer-list a:focus {
+    color: $text-color;
+}
+
+.footer-bottom {
+    position: relative;
+    text-align: center;
+    padding: 20px 0 15px 0;
+   
+    background: $contrast-color;
+}
+
+.footer-bottom p {
+    color: #fff;
+    margin: 0;
+    color: $text-color;
+    float: left;
+}
+
+
+.footer-bottom a {
+    position: relative;
+    display: inline-block;
+    padding: 0 6px;
+    color: $text-color;
+
+    &:first-child {
+        padding-left: 0;   
+    }
+}
+
+.footer-bottom a:hover,
+.footer-bottom a:focus {
+    color: $title-color;
+}
+
+.footer-bottom a:after {
+    content: '';
+    position: absolute;
+    right: -3px;
+    top: 3px;
+    width: 2px;
+    height: 15px;
+    background: lighten($text-color, 15%);
+}
+
+.footer-bottom a:last-child:after {
+    display: none;
+}
+
+.footer-social {
+    padding: 9px 0 0;
+}
+
+.footer-social li {
+    float: left;
+    padding: 0 10px 10px 0;
+}
+
+.footer-social a {
+    display: block;
+    width: 44px;
+    text-align: center;
+    height: 44px;
+    font-size: 16px;
+    color: $title-color;
+
+    .fa {
+       height: 44px;
+       height: 44px;   
+       display: block; 
+       line-height: 44px;
+       background: $contrast-color;
+
+       &:hover, &:focus {
+            background: darken($contrast-color, 10%);   
+       }
+    }
+  
+}
+
+
+  .payment-methods {
+        float: right;
+        margin-top: -2px;
+
+        li {
+            display: inline-block;
+            font-size: 12px;
+            text-transform: uppercase;
+            padding: 0 10px;
+            position: relative;
+            
+            
+
+            &:after {
+                content: '';
+                position: absolute;
+                right: -3px;
+                top: 3px;
+                width: 1px;
+                height: 15px;
+                background: lighten($text-color, 15%);  
+            }
+            
+        }
+
+        li:first-child {
+            padding-left: 0;   
+        }
+
+        li:last-child:after {
+            display: none;   
+        }
+    }   
+
+  
+// md
+@media (min-width: 992px) and (max-width: 1199px) {
+    
+
+ }
+
+// sm
+@media (min-width: 768px) and (max-width: 991px) {
+    
+    .payment-methods {
+float: none;
+margin: 0;
+    }
+
+    .footer p {
+        float: none; 
+        margin-bottom: 10px;  
+    }
+
+    }
+
+/* xs */
+@media (max-width: 767px) {
+    .footer-top {
+        padding: 40px 0;
+    }
+    .footer-list {
+        margin-bottom: 20px;
+    }
+
+
+    .payment-methods li {
+  
+    padding: 0 6px;
+  
+}
+
+        .payment-methods {
+float: none;
+margin: 0;
+    }
+
+    .footer p {
+        float: none; 
+        margin-bottom: 10px;  
+    }
+
+    }
+

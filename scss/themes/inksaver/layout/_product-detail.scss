@@ -1,0 +1,338 @@
+/* product detail page */
+//=============================================================
+
+
+// product header breadcrumb
+
+.product-detail .breadcrumb-contain {
+  margin-top: 48px;
+  margin-bottom: 49px;
+
+  ol li {
+    font-size: 12px;
+    font-family: 'ProximaRegular', serif;
+    line-height: 1.67;
+    color: $link-hover-text-color;
+
+    &:last-child {
+      overflow: visible;
+      width: auto !important;
+      max-width: none !important;
+      font-family: 'ProximaBold', serif;
+      white-space: normal;
+    }
+  }
+}
+
+// product details info section
+
+.product-detail-information {
+
+  @media screen and (max-width: 959px) {
+    margin-bottom: 0px;
+  }
+
+  .product-detail-header {
+    margin-bottom: 27px;
+    padding-bottom: 0;
+    border: 0;
+
+    h1 {
+      font-size: 30px;
+      font-family: 'ProximaBold', serif;
+      color: $title-color;
+    }
+
+    .product-detail-price {
+      float: none;
+      margin-bottom: 0px;
+
+      .product-detail-current-price {
+        margin-top: 0px;
+        font-size: 26px;
+        color: $secondary-color;
+        font-family: 'ProximaRegular', serif;
+        font-weight: normal;
+
+        .product-detail-exc-vat {
+          font-size: 14px;
+          color: $text-color;
+        }
+      }
+    }
+  }
+}
+
+
+.product-detail-information {
+  .product-detail-summary {
+    font-size: 16px;
+    line-height: 1.5;
+    color: $gray-text-medium;
+    margin-bottom: 22px;
+    float: none;
+  }
+
+  .product-promotion {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 25px;
+
+    img {
+      margin-right: 16px;
+    }
+
+    p {
+      font-size: 14px;
+      font-family: 'ProximaBold', serif;
+      color: $gray-text-dark;
+    }
+  }
+}
+
+.product-detail-form-list {
+  float: left;
+  margin-bottom: 24px;
+
+  .product-detail-form-row {
+    float: none;
+
+    .product-colour a {
+      width: 28px;
+      height: 28px;
+      border-radius: 100%;
+      float: left;
+      position: relative;
+    }
+
+    .product-colour a.active:before {
+      width: 36px;
+      height: 36px;
+      border-radius: 100%;
+      border: 1px solid $gray-text-medium;
+      position: absolute;
+      left: -4px;
+      top: -4px;
+      background: transparent;
+    }
+
+    .product-colour a.active:after {
+      content: '';
+    }
+
+    .product-colour a.disabled:after {
+      content: '\f00d';
+      text-shadow: none;
+      color: rgba(0,0,0,0.2);
+      font-size: 16px;
+      top: -3px;
+    }
+    .product-colour a.disabled:before {
+     display: none;
+    }
+  }
+}
+
+.product-stock-status  {
+  float: left;
+  display: flex;
+  align-items: center;
+
+  img {
+    margin-right: 6px;
+  }
+
+  p {
+    margin-bottom: 0px;
+    font-size: 16px;
+    color: #121212;
+  }
+}
+
+.product-grid-section {
+  border: 0;
+  padding: 0;
+  margin-top: 22px;
+  margin-bottom: 30px;
+
+
+  .product-detail-quantity {
+    margin-right: 16px;
+
+    span {
+      font-size: 14px;
+      color: $title-color;
+    }
+  }
+
+  a.btn {
+    font-size: 12px;
+    font-family: 'ProximaBold', serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 16px;
+    background-color: $gray-dark;
+    border: solid 1px $gray-dark;
+    color: $btn-text;
+    transition: 0.2s;
+
+    &:hover {
+      background-color: #000000;
+      transition: 0.3s;
+    }
+
+    i {
+      margin-right: 2px;
+      font-size: 22px;
+
+      &.fa-heart-o {
+        font-size: 16px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    a.btn-add-cart {
+      width: 100%;
+    }
+  }
+
+  a.btn-wishlist {
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
+
+  a.check-stock {
+    float: left;
+    font-size: 16px;
+    line-height: 1;
+    color: $primary-color;
+    margin-bottom: 12.5px;
+    margin-top: 12.5px;
+    margin-left: 6px;
+    margin-right: 6px;
+    border-bottom: 1px solid $primary-color;
+  }
+}
+
+.product-detail-shipping-tagline {
+  background-color: #f0f0f0;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  float: left;
+  padding-left: 12px;
+  padding-right: 11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: $gray-text-medium;
+    margin-bottom: 0;
+  }
+}
+
+.product-meta {
+  ul {
+    color: $gray-text-medium;
+    font-family: 'ProximaRegularItalic', serif;
+    font-size: 14px;
+  }
+}
+
+// product social share icons
+
+.product-social-share {
+  margin-top: 30px;
+  margin-bottom: 60px;
+
+  .product-social-list {
+    li {
+      display: inline;
+
+      a i {
+        color: $text-color !important;
+        font-size: 25px;
+        bottom: 0 !important;
+        margin-right: 29px;
+        transition: 0.2s;
+
+        &:hover {
+          transition: 0.3s;
+        }
+
+        &.fa-envelope:hover {
+          color: $primary-color !important;
+        }
+
+        &.fa-facebook:hover {
+          color: #3b5998 !important;
+        }
+
+        &.fa-twitter:hover {
+          color: #55acee !important;
+        }
+
+        &.fa-pinterest:hover {
+          color: #cb2027 !important;
+        }
+
+        &.fa-google-plus:hover {
+          color: #dd4b39 !important;
+        }
+      }
+    }
+  }
+}
+
+// product image feature image and carousel
+
+.product-detail-screen {
+
+  .product-badge {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-right: 23px;
+    padding-left: 23px;
+    border-radius: 0;
+    width: auto !important;
+    height: auto !important;
+    top: 0;
+    left: 0;
+    font-size: 12px;
+    font-family: 'ProximaBold', serif;
+    text-align: center;
+    color: #ffffff;
+
+    &.feature-badge {
+      background: $primary-color;
+      color: #fff;
+    }
+  }
+
+  .thumbnail-slider-nav {
+    margin-top: 18px;
+
+    .thumbnail-slider-nav-inner {
+      margin: 0 !important;
+    }
+
+    .slick-list {
+      padding-top: 0px;
+
+      .slick-current {
+        .thumbnail-nav-img {
+          border: solid 1px $text-color;
+        }
+      }
+    }
+  }
+}

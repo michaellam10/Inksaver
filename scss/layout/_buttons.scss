@@ -1,0 +1,215 @@
+a, .btn, button {
+    outline: none;
+    border: none;
+    //@include transition(.25s);
+}
+a {
+    color: $secondary-color;   
+}
+
+a:focus,
+a:hover {
+    color: darken($secondary-color, 10%);   
+}
+
+a:focus,
+a:hover, 
+.btn:focus, 
+.btn:hover,
+.btn:active:focus,
+button:focus, 
+button:hover {
+    outline: none;
+    text-decoration: none;
+}
+
+.btn {
+    color: $btn-text;
+    padding: 13px 30px 12px 30px;
+    border-radius: 0;
+    background: $primary-color;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+
+    .fa {
+        margin-right: 8px;   
+    }
+   
+}
+.btn:hover,
+.btn:focus,
+.btn:active {
+    background: darken($primary-color, 10%);
+    color: $btn-text;
+    @include box-shadow(none);
+}
+
+.btn:focus {
+    @include box-shadow(none);
+}
+
+.btn.btn[disabled] {
+    background: $contrast-color;
+    opacity: 1;
+    color: $text-color;  
+    
+    &:hover, &:focus {
+        color: $text-color;
+        background: $contrast-color;
+    } 
+}
+
+.btn-stroke {
+    color: $primary-color;
+    background: none;
+    padding-top: 11px;
+    padding-bottom: 10px;
+    border: solid 2px $primary-color;   
+}
+
+.btn-stroke:hover,
+.btn-stroke:focus,
+.btn-stroke:active {
+    background: none;
+    color: darken($primary-color, 10%);
+    border-color: darken($primary-color, 10%);
+    
+}
+
+.btn-fill {
+    color: $title-color;
+    padding: 13px 20px 12px 20px;
+    background: $contrast-color;
+}
+
+.btn-fill:hover,
+.btn-fill:focus,
+.btn-fill:active {
+    background: darken($contrast-color, 10%);
+    color: $title-color;
+}
+
+.btn-facebook {
+    background: #3b5998;
+    
+    .fa {
+        color: #fff; 
+        margin-right: 8px;  
+    }
+
+    &:hover, &:focus {
+        background: darken(#3b5998, 10%)!important;   
+    }
+}
+
+.btn-google {
+    background: #fff;
+    color: $text-color;
+    border: solid 2px $border-color;
+
+    .fa {
+        color: #e63125;   
+        margin-right: 8px;
+    } 
+
+    &:hover, &:focus {
+        color: $text-color;
+        background: $border-color!important;   
+    }
+}
+
+.btn-wishlist {
+    @extend .btn-fill;   
+}
+
+.btn-compare {
+    @extend .btn-fill;   
+
+    .fa {
+        margin: 0;   
+    }
+}
+
+.btn-lite {
+    color: $title-color;
+    background: none;
+  
+    padding: 0; 
+
+    .fa {
+        margin-right: 8px;   
+    }
+
+    &:hover, &:focus {
+        background: none;
+        color: $text-color;
+    }   
+}
+
+.btn-infos {
+
+   @extend .btn-fill;
+
+   &:hover {
+        
+   }
+
+   .fa {
+        margin: 0;   
+   }
+}
+
+.lnk-default {
+    color: $secondary-color;  
+    
+    &:hover, &:focus {
+        color: darken($secondary-color, 10%);   
+    } 
+}
+
+.lnk-add-compare {
+    margin-top: 10px;
+    display: inline-block;
+    color: $text-color;
+
+    .loader {
+        display: inline-block;
+        margin-right: 8px;   
+    }
+
+    .fa {
+        color: $title-color;
+        margin-right: 8px;   
+    }   
+
+    &:hover {
+        color: $title-color;   
+    }
+
+    &:hover .fa {
+        color: $primary-color;   
+    }
+}
+
+ .lnk-added-to-compare {
+     margin-top: 10px;
+     display: inline-block;
+     color: $text-color;
+
+    .fa {
+        margin-right: 8px;
+        color: $primary-color;   
+    }   
+
+    &:hover {
+        color: $title-color;   
+    }
+}
+
+// xs
+@media (max-width: 767px) {
+    .btn {
+        font-size: 12px;   
+    }
+}

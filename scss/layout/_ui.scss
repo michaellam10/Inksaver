@@ -1,0 +1,110 @@
+﻿
+.ui-nav {
+    position: absolute;
+    top: 0;
+    left: 0;   
+    width: 215px;
+
+    header {
+        padding: 30px 0;
+        background: darken($title-color, 28%);
+        h1 {
+            color: #fff;
+            font-size: 14px;
+            margin: 0 30px;  
+            font-weight: 600;
+            
+            span {
+                display: block;
+                font-size: 10px;
+                margin-bottom: 5px;
+                text-transform: uppercase;
+                color: $contrast-color; 
+                letter-spacing: 1.5px;  
+                font-weight: 400;
+            } 
+
+            .fa {
+                margin-right: 8px;
+            }
+        }   
+    }
+}
+
+.ui-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    width: 215px;
+
+    a {
+        color: #fff;
+        display: block;
+        padding: 15px 30px;
+        text-decoration: none;
+
+        &.active {
+            border-left: solid 3px $primary-color;
+            background: darken($title-color, 23%);
+        }
+    }
+}
+
+
+.ui-page-wrapper {
+    width: 100%;
+    overflow-x: hidden;  
+    background: darken($title-color, 17%);
+}
+
+.ui-page-contain {
+    padding: 0 30px 0 245px;
+    position: relative;
+}
+
+
+.ui-main-content {
+    margin-left: 215px;
+    background: $contrast-color;
+    padding: 30px 30px 0 30px;
+    height: 100%;
+
+    .ui-title {
+        margin: 0 0 30px 0;   
+    }
+}
+
+.ui-section {
+      
+    margin-bottom: 50px;
+   
+    .ui-section-contain {
+        background: #fff;
+        padding: 30px;    
+    }
+}
+
+.ui-sub-title {
+    color: $text-color;
+    text-transform: uppercase;
+    font-weight: 700;   
+    font-size: 16px;
+    letter-spacing: 1.2px;
+    margin: 0 0 30px 0;
+}
+
+
+pre {
+    display: block;
+    padding: 10px;
+    font-size: 13px;
+    line-height: 20px;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0,0,0,0.15);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}

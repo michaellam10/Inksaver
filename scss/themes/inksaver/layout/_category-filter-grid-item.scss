@@ -1,0 +1,81 @@
+/* Individual grid item in category filter results */
+// ===============================================================
+
+.category-filter-box {
+    padding: 55px 20px;
+    background-color: rgba(245, 245, 245, 0.51);
+    border: solid 1px $border-color;
+    position: relative;
+    margin-bottom: 25px;
+    transition: 0.25s;
+
+    &:hover {
+      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+      background-color: #ffffff;
+      transition: 0.25s;
+      transform: scale(1.05);
+    }
+
+    .category-filter-box-content-contain {
+
+      .category-filter-box-img {
+        border: none;
+        margin-bottom: 26px;
+        height: auto;
+
+        img {
+          margin: 0 auto;
+          display: block;
+        }
+      }
+
+      .category-filter-box-title {
+
+          margin-bottom: 13px;
+
+          h2 {
+            font-size: 18px;
+            color: $gray-text-dark;
+            margin: 0;
+          }
+      }
+
+      .category-filter-box-expand {
+
+          text-align: center;
+          background-color: #ffffff;
+          border: solid 2px $gray-dark;
+          width: 143px;
+          height: 40px;
+          padding-left: 24px;
+          padding-right: 24px;
+          padding-top: 13px;
+          padding-bottom: 12px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 0 auto;
+
+          p {
+            font-size: 12px;
+            font-family: 'ProximaBold', serif;
+            color: $gray-text-dark;
+            margin: 0;
+          }
+
+          @media screen and (max-width: 435px) {
+            width: 100%;
+            padding-left: 0;
+            padding-right: 0;
+          }
+      }
+    }
+
+    .category-filter-box-color-options {
+      position: absolute;
+      height: auto;
+      width: auto;
+      right: 10px;
+      bottom: 5px;
+    }
+}

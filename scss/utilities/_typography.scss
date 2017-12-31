@@ -1,0 +1,78 @@
+// Typography
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,600,700');
+
+$font-stack: 'Poppins', sans-serif !default;
+
+body {
+    color: $text-color;
+    font-size: 14px;
+    font-family: $font-stack;
+    line-height: 1.6;
+} 
+
+// text highlight
+::selection {
+    background: $primary-color;
+    text-shadow: none;
+    color: #fff;
+    opacity: 1;
+}
+
+p {
+    color: $text-color;
+   
+}
+
+p a {
+    color: $primary-color;
+    
+    &:hover, &:focus {
+        color: darken($primary-color, 10%);   
+    }   
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $title-color;
+    line-height: 1.4;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 28px;  
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 24px;   
+    font-weight: 600;
+    margin: 10px 0 15px 0;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+h4 {
+    font-size: 16px;
+}
+
+// xs
+@media (max-width: 767px) {
+    body {
+        font-size: 12px;  
+    }
+
+    
+    h1 {
+        font-size: 24px;  
+    }
+
+    h2 {
+        font-size: 20px;   
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+}

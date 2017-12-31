@@ -1,0 +1,116 @@
+/* horizontal product carousel */
+//=============================================================
+
+.product-badge {
+  border-radius: 100%;
+  top: 14px;
+  left: 14px;
+  width: 55px;
+  height: 55px;
+  font-size: 11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .product-badge-inner {
+    line-height: 12px;
+    text-align: center;
+    font-size: 11px;
+  }
+}
+
+.product-box-detail {
+  h3 {
+    color: $text-color;
+    font-size: 16px;
+    white-space: normal;
+  }
+
+  .product-box-prev-price {
+    float: right;
+  }
+}
+
+.product-box-contain {
+  height: auto !important;
+  transition: 0.25s;
+  padding-bottom: 5px;
+
+  &:hover {
+
+    .product-box-img {
+      border: 1px solid $gray-dark;
+    }
+  }
+}
+
+.column-slider,
+.specials-column-slider {
+  h2 {
+    font-size: 30px;
+    margin-bottom: 3px;
+  }
+
+  .section-preheading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6px;
+
+    p {
+      font-size: 14px;
+      margin-bottom: 0;
+      margin-left: 13px;
+      margin-right: 13px;
+      text-transform: uppercase;
+    }
+
+    hr {
+      width: 48px;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.slick-list {
+  padding-top: 24px;
+}
+
+.slick-dots {
+  li button {
+    background: #c7c7c7;
+  }
+
+  li.slick-active button {
+    background: $text-color;
+  }
+}
+
+.slider-buttons {
+  text-align: right;
+  position: static !important;
+  display: flex;
+  justify-content: flex-end !important;
+  align-items: center;
+  text-align: right;
+
+  .slide-next,
+  .slide-prev {
+    width: 42px;
+    height: 42px;
+    border: solid 1px $border-color;
+    background-color: #ffffff;
+    position: static !important;
+
+    i {
+      position: relative;
+      top: -1px;
+    }
+
+  }
+}
+
+#recommended {
+  padding-top: 60px !important;
+}

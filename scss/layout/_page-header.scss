@@ -1,0 +1,26 @@
+.page-header {
+   margin: 31px 0;
+    border: none;
+    padding: 0;
+
+    h1 {
+        margin: 5px 0 0;   
+       
+    }
+}
+
+
+// sm
+@media (min-width: 768px) and (max-width: 991px) {
+    .page-header {
+         margin: 21px 0;
+    }
+}
+
+// xs
+@media (max-width: 767px) {
+    .page-header {
+            margin: 21px 0;
+    }
+}
+

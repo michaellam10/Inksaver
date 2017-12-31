@@ -1,0 +1,90 @@
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    min-height: 100%;
+    flex-direction: column;
+} 
+
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+hr {
+    border-color: $border-color;
+    margin: 30px 0;   
+}
+
+// lists
+.disc {
+    list-style: disc;
+    padding-left: 17px;
+    margin: 0 0 30px 0;
+
+    li {
+      color: $text-color;  
+      margin-bottom: 5px;
+    }
+}
+
+.numbered {
+    list-style: decimal;
+    padding-left: 12px;
+    margin: 0 0 30px 0;
+
+    li {
+        color: $text-color;
+        margin-bottom: 5px;
+    }
+}
+
+
+
+
+// standardize IE scrollbar
+@-ms-viewport {
+    width: auto !important;
+}
+
+// container desktop width
+@media (min-width: 1200px) {
+    //.container {
+      // width: ; adjust for wider/narrower container
+   // }
+}
+
+.main-content {
+    flex: 1 0 auto;
+}
+
+.col-centered {
+    float: none;
+    margin: 0 auto;   
+}
+
+// hover dropdowns enabled to tablet size
+@media (min-width: 992px) {
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+}
+
+// sm
+@media (min-width: 768px) and (max-width: 991px) {
+    .container {
+        width: 100%;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+}
+
+// xs
+@media (max-width: 767px) {
+    .container {
+        width: 100%;
+    }
+}

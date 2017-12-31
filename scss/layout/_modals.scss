@@ -1,0 +1,56 @@
+.modal-content {
+    @include border-radius(0);   
+    @include box-shadow(none);
+    border: none;
+
+    .btn-close-modal {
+        margin-right: 20px;   
+    }
+}
+
+.modal-backdrop {
+    background: $modal-backdrop;
+}
+
+.modal-backdrop.in {
+    @include opacity(.9);    
+}
+
+.modal-header {
+    border: none;
+    padding: 40px 30px;
+    position: relative;
+}
+
+.modal-title {
+    font-weight: 400;
+    text-align: center;
+    font-size: 24px;
+}
+
+.modal-header .close {
+    margin-top: 0;
+    position: absolute;
+    top: 17px;
+    right: 21px; 
+}
+
+.modal-body {
+    padding: 0 30px 30px 30px;   
+}
+
+.modal-header .close {
+    font-size: 14px;
+    color: lighten($text-color, 25%);
+    @include opacity(1); 
+    
+    &:hover, &:focus {
+        color: $text-color;
+        @include opacity(1); 
+    }    
+}
+
+.modal-footer {
+    padding: 0 30px 30px;
+    border: none;
+}

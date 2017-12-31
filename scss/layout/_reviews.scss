@@ -1,0 +1,121 @@
+.mini-rating-contain {
+    margin: 15px 0 0 0;
+    position: relative;
+
+    .mini-rating {
+        display: inline-block;   
+    }
+    
+    a {
+        margin-left: 5px;
+   
+        color: $text-color;   
+        padding-left: 10px;
+        position: relative;
+
+        @extend .lnk-default;
+
+
+        &:before {
+            content: '';
+            width: 1px;
+            background: $border-color;
+            height: 16px;
+            position: absolute;
+            left: 0;
+            top: 3px;
+        }
+    }
+}
+
+.rating-on {
+    color: $secondary-color;   
+}
+
+.rating-half {
+    color: $secondary-color;  
+    position: relative; 
+    width: 13px;
+    
+    &:before {
+        position: relative;
+        z-index: 2;
+    }
+
+    &:after {
+        content: '\f005';
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        color: lighten($text-color,30%);  
+    }
+}
+
+.rating-off {
+    color: lighten($text-color,30%);   
+}
+
+
+.review-contain {
+    .review-header {
+         margin-bottom: 20px;
+         float: left;
+         width: 100%;  
+         
+         .review-meta-rating {
+            float: right;   
+        } 
+    }
+
+    .review-meta {
+        max-width: 64%;
+        float: left;
+
+        .review-author {
+            display: block;
+            color: $title-color;
+            font-weight: 600;
+            margin-bottom: 5px;   
+        }   
+        .review-date {
+            color: lighten($text-color, 12%);
+           
+               
+        }
+
+    }  
+    
+    .review-post {
+        padding-bottom: 20px;
+        border-bottom: solid 1px $border-color;
+        margin-bottom: 30px;   
+    } 
+}
+
+.review-form {
+   
+    h4 {
+        margin: 0 0 20px 0;
+        font-weight: 600;
+        font-size: 14px;   
+ 
+    }   
+
+    .rating-half {
+        width: 22px;   
+    }
+
+     .review-form-rating {
+        margin-bottom: 25px;   
+     }
+
+    .review-form-rating .fa {
+           font-size: 24px;
+    }
+
+    .form-group {
+        margin-bottom: 30px;   
+    }
+
+}

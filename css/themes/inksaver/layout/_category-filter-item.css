@@ -1,0 +1,71 @@
+.category-filter-box {
+  padding: 55px 20px;
+  background-color: rgba(245, 245, 245, 0.51);
+  border: solid 1px #dddddd;
+  position: relative;
+  margin-bottom: 25px;
+  -webkit-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s; }
+  .category-filter-box:hover {
+    -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    -webkit-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s;
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05); }
+  .category-filter-box .category-filter-box-content-contain .category-filter-box-img {
+    border: none;
+    margin-bottom: 26px;
+    height: auto; }
+    .category-filter-box .category-filter-box-content-contain .category-filter-box-img img {
+      margin: 0 auto;
+      display: block; }
+  .category-filter-box .category-filter-box-content-contain .category-filter-box-title {
+    margin-bottom: 13px; }
+    .category-filter-box .category-filter-box-content-contain .category-filter-box-title h2 {
+      font-size: 18px;
+      color: #323232;
+      margin: 0; }
+  .category-filter-box .category-filter-box-content-contain .category-filter-box-expand {
+    text-align: center;
+    background-color: #ffffff;
+    border: solid 2px #323232;
+    width: 143px;
+    height: 40px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 13px;
+    padding-bottom: 12px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0 auto; }
+    .category-filter-box .category-filter-box-content-contain .category-filter-box-expand p {
+      font-size: 12px;
+      font-family: 'ProximaBold', serif;
+      color: #323232;
+      margin: 0; }
+    @media screen and (max-width: 435px) {
+      .category-filter-box .category-filter-box-content-contain .category-filter-box-expand {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0; } }
+  .category-filter-box .category-filter-box-color-options {
+    position: absolute;
+    height: auto;
+    width: auto;
+    right: 10px;
+    bottom: 5px; }

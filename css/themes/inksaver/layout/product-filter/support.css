@@ -1,0 +1,71 @@
+.contact-us,
+.support {
+  height: auto;
+  padding-top: 85px;
+  padding-bottom: 48px;
+  background-color: #f5f5f5;
+  position: relative;
+}
+
+.contact-us img,
+.support img {
+  position: absolute;
+  left: 0 !important;
+  right: 0 !important;
+  margin: 0 auto;
+  top: -50px;
+}
+
+.contact-us .container,
+.support .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-us .container .content-container,
+.support .container .content-container {
+  min-width: calc(100%-590px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-us .container .content-container h1,
+.support .container .content-container h1 {
+  font-size: 30px;
+  color: #575757;
+  font-family: 'ProximaBold', serif;
+  margin-top: 0;
+  margin-bottom: 7px;
+}
+
+.contact-us .container .content-container p,
+.support .container .content-container p {
+  font-size: 18px;
+  line-height: 1.33;
+  color: #666666;
+  margin-bottom: 36px;
+}
+
+.contact-us .container .content-container a div,
+.support .container .content-container a div {
+  padding: 16px 25px 17px;
+  background-color: #cf0974;
+}
+
+.contact-us .container .content-container a div:hover,
+.support .container .content-container a div:hover {
+  background-color: #9e0759;
+}
+
+.contact-us .container .content-container a div p,
+.support .container .content-container a div p {
+  font-size: 12px;
+  font-family: 'ProximaBold', serif;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin: 0 !important;
+}

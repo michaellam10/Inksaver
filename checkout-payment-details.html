@@ -1,0 +1,448 @@
+﻿<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <!-- Mobile Metas -->
+        <meta name="viewport" content="width=device-width, user-scalable=1, initial-scale=1, maximum-scale=1">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+
+        <title></title>
+
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="scss/styles.min.css" />
+
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+     
+        <!-- header starts -->
+        <header class="masthead header-a masthead-empty">
+            <nav class="navbar">
+                <div class="container">
+                    <div class="navbar-header">
+                        <div class="navbar-header-contain">
+                            <a class="navbar-brand" href="index.html">Logo</a>
+                            <div class="navbar-toggle-contain">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navbar-detail">
+                        <ul>
+                            <li>
+                                <i class="fa fa-lock"></i>
+                                <div class="navbar-detail-inner">
+                                    <strong>100% Secure</strong>
+                                    <span>Online Shopping</span>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa fa-phone"></i>
+                                <div class="navbar-detail-inner">
+                                    <strong><a href="tel:+27123481165">012 348 1165</a></strong>
+                                    <span>Help &amp; Enquiries</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- header ends -->
+      
+
+        <!-- main content starts -->
+        <main class="main-content">
+            <div class="checkout-contain">
+                <div class="page-header">
+                    <div class="container">
+                        <h1>Payment Details</h1>
+                    </div>
+                </div>
+
+                <form action="/createorder" class="" id="checkout-details-form" method="post" role="form">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-8">
+                                <div class="boxed">
+                                    <input type="hidden" name="Checksum" value="16328371406313524998897620914722224983" />
+                                    <input name="__RequestVerificationToken" type="hidden" value="DJR_Q7Qlx_3jzLPG9dl1B5RulHpqMFVhKMkxwVixx5wxMeytzWePiFVwGU_gUou2wjQLrJBqkLwQweiMW63hQr3egfU1" />
+                                    <div class="sub-container">
+                                        <div class="sub-well">
+                                            <h2>Invoice will be sent to</h2>
+                                            <a class="mini-collapse" role="button" data-toggle="collapse" href="#collapseInvoice" aria-expanded="false" aria-controls="collapseInvoice" data-name="" data-email="" data-phone="" data-vat-no="" data-po-no="">
+                                                JJ Williams (jj@warpdevelopment.co.za) <span class="lnk-default">Change?</span>
+                                            </a>
+                                            <div class="collapse" id="collapseInvoice">
+                                                <div class="option-well-content">
+                                                    <div class="row">
+                                                        <div class="col-sm-6">
+                                                            <div class="form-group">
+                                                                <label class="control-label">Name / Company Name *</label>
+                                                                <input class="form-control" data-validate="true" data-validate-required="true" id="CompanyName" name="CompanyName" placeholder="(Required)" type="text" value="" />
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="control-label">Phone *</label>
+                                                                <input class="form-control" data-validate="true" data-validate-required="true" id="Phone" name="Phone" placeholder="(Required)" type="text" value="" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <div class="form-group">
+                                                                <label class="control-label">VAT No</label>
+                                                                <input class="form-control" id="VatNo" name="VatNo" placeholder="(Optional)" type="text" value="" />
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="control-label">Email *</label>
+                                                                <input class="form-control" data-validate="true" data-validate-email="true" data-validate-required="true" id="Email" name="Email" placeholder="(Required)" type="text" value="" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-12">
+                                                            <div class="form-group">
+                                                                <label class="control-label">Purchase Order No</label>
+                                                                <input class="form-control" id="PurchaseOrderNumber" name="PurchaseOrderNumber" placeholder="(Optional)" type="text" value="" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-12">
+                                                            <div class="btn-row-options">
+                                                                <button class="btn btn-lite" type="button" onclick="DefaultSentTo();">Cancel</button>
+                                                                <button class="btn" type="button" onclick="SentTo();">Update</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sub-container">
+                                        <div class="sub-well" id="delivered-to" style="display:none">
+                                            <h2>Order will be delivered to</h2>
+                                            <a class="mini-collapse" role="button" data-toggle="collapse" href="#shipping-addresses" aria-expanded="false" aria-controls="shipping-addresses">
+                                                <span class="lnk-default">Change?</span>
+                                            </a>
+                                        </div>
+
+
+                                        <div class="sub-well collapse in" id="shipping-addresses" data-parent="#shipping-addresses" aria-expanded="true">
+                                            <div class="accordion accordion-rl accordion-tolower" id="address-accordion" role="tablist" aria-expanded="true" aria-multiselectable="false">
+                                                <h2>Where would you like this order delivered to?</h2>
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading" role="tab">
+                                                        <h3>
+                                                            <input data-address="JJ Williams, 2 Bostonstreet, Bryanston, 0844945522 (Individual)" data-rel="ShippingAddress" data-val="true" data-val-number="The field ShippingAddressId must be a number." data-val-required="&#39;Shipping Address Id&#39; must not be empty." id="ShippingAddressId" name="ShippingAddressId" type="radio" value="11" />
+                                                            <span class="accordion-rl-title">JJ Williams, 2 Bostonstreet, Bryanston, 0844945522 (Individual)</span>
+                                                            <a role="button" data-toggle="collapse" data-parent="#address-accordion" href="#Address_11"></a>
+                                                        </h3>
+                                                    </div>
+                                                    <div id="Address_11" class="panel-collapse collapse" role="tabpanel">
+                                                    </div>
+                                                </div>
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading" role="tab">
+                                                        <h3>
+                                                            <input data-address="JJ Williams, 2 Bostonstreet, Protea Heights, 0844945522 (Individual)" data-rel="ShippingAddress" id="ShippingAddressId" name="ShippingAddressId" type="radio" value="5" />
+                                                            <span class="accordion-rl-title">JJ Williams, 2 Bostonstreet, Protea Heights, 0844945522 (Individual)</span>
+                                                            <a role="button" data-toggle="collapse" data-parent="#address-accordion" href="#Address_5"></a>
+                                                        </h3>
+                                                    </div>
+                                                    <div id="Address_5" class="panel-collapse collapse" role="tabpanel">
+                                                    </div>
+                                                </div>
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading" role="tab">
+                                                        <h3>
+                                                            <input data-rel="ShippingAddress" id="create-address" name="ShippingAddressId" type="radio" value="-1" />
+                                                            <span class="accordion-rl-title">Create new address</span>
+                                                            <a role="button" data-toggle="collapse" data-parent="#address-accordion" href="#CreateNewAddress"></a>
+                                                        </h3>
+                                                    </div>
+                                                    <div id="CreateNewAddress" class="panel-collapse collapse " role="tabpanel">
+                                                        <div class="panel-body">
+                                                            <h3>Contact Person</h3>
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group">
+                                                                        <label class="control-label" for="ShippingAddress_FirstName">Name *</label>
+                                                                        <input class="form-control form-highlight-invalid" data-validate="true" data-validate-required="true" id="ShippingAddress_FirstName" name="ShippingAddress_FirstName" placeholder="Name" tabindex="1" type="text" value="JJ" />
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label class="control-label" for="ShippingAddress_Phone">Phone *</label>
+                                                                        <input class="form-control" data-validate="true" data-validate-required="true" id="ShippingAddress_Phone" name="ShippingAddress_Phone" placeholder="Phone" tabindex="3" type="text" value="" />
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group">
+                                                                        <label class="control-label" for="ShippingAddress_LastName">Surname *</label>
+                                                                        <input class="form-control" data-validate="true" data-validate-required="true" id="ShippingAddress_LastName" name="ShippingAddress_LastName" placeholder="Surname" tabindex="2" type="text" value="Williams" />
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label class="control-label" for="ShippingAddress_Email">Email *</label>
+                                                                        <input class="form-control" data-validate="true" data-validate-email="true" data-validate-required="true" id="ShippingAddress_Email" name="ShippingAddress_Email" placeholder="Email Address" tabindex="4" type="text" value="jj@warpdevelopment.co.za" />
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <h3>Address</h3>
+                                                            <div class="form-group">
+                                                                <label class="control-label" for="ShippingAddress_Address1">Address Line 1 *</label>
+                                                                <input class="form-control" data-validate="true" data-validate-required="true" id="ShippingAddress_Address1" name="ShippingAddress_Address1" placeholder="(Required)" tabindex="5" type="text" value="" />
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group">
+                                                                        <label class="control-label" for="ShippingAddress_Address2">Address Line 2</label>
+                                                                        <input class="form-control" id="ShippingAddress_Address2" name="ShippingAddress_Address2" placeholder="(Optional)" tabindex="6" type="text" value="" />
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label class="control-label" for="ShippingAddress_Address3">Suburb *</label>
+                                                                        <input class="form-control" data-validate="true" data-validate-required="true" id="ShippingAddress_Address3" name="ShippingAddress_Address3" placeholder="(Required)" tabindex="7" type="text" value="" />
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label class="form-label" for="ShippingAddress_CountryId">Country *</label>
+                                                                        <select class="js-select" data-validate="true" data-validate-required="true" id="ShippingAddress_CountryId" name="ShippingAddress_CountryId" tabindex="10">
+                                                                            <option value="1">South Africa</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+
+                                                                    <div class="form-group">
+                                                                        <label class="control-label" for="ShippingAddress_City">City / Town *</label>
+                                                                        <input class="form-control" data-validate="true" data-validate-required="true" id="ShippingAddress_City" name="ShippingAddress_City" placeholder="(Required)" tabindex="9" type="text" value="" />
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label class="control-label" for="ShippingAddress_RegionName">Region *</label>
+                                                                        <input class="form-control" data-validate="true" data-validate-required="true" id="ShippingAddress_RegionName" name="ShippingAddress_RegionName" placeholder="(Required)" tabindex="8" type="text" value="" />
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label class="control-label" for="ShippingAddress_Code">Postal Code *</label>
+                                                                        <input class="form-control" data-validate="true" data-validate-required="true" id="ShippingAddress_Code" name="ShippingAddress_Code" placeholder="(Required)" tabindex="11" type="text" value="" />
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="btn-row-options">
+                                                                <button class="btn btn-lite" type="button" data-toggle="collapse" data-target="#CreateNewAddress" aria-expanded="true">Cancel</button>
+                                                                <button class="btn" onclick="Emmerce.Checkout.CreateAddress({ scrollTop: 120, invalidClass: 'form-highlight-invalid ' });" type="button">Create</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sub-container">
+                                        <div class="sub-well" id="ship-with" style="display:none">
+                                            <h2>Order will be shipped by</h2>
+                                            <a class="mini-collapse" role="button" data-toggle="collapse" href="#shipping-providers" aria-expanded="false" aria-controls="shipping-providers">
+                                                <span class="lnk-default">Change?</span>
+                                            </a>
+                                        </div>
+                                        <div class="sub-well collapse" id="shipping-providers">
+
+                                        </div>
+                                    </div>
+                                    <div class="sub-container">
+                                        <div class="sub-well" id="payments">
+                                            <h2>How would you like to pay?</h2>
+
+
+                                            <div class="sub-well">
+
+                                                <div class="accordion accordion-rl" id="payment-accordion" role="tablist" aria-multiselectable="true">
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading" role="tab">
+                                                            <h3>
+                                                                <input type="radio" name="PaymentMethodName" value="Storefront.Extensibility.Payment.SnapScan.Payment" data-form="/payment/SnapScan/form/?orderRef=AAWAIBFTN9GY7DNBLM5FVSI0WADYVPLU" data-systemname="Storefront-Extensibility-Payment-SnapScan-Payment">
+                                                                <span class="accordion-rl-title">Sunatchan</span>
+                                                                <img src="//d2rw7fmapbgpu6.cloudfront.net/images/FriendlyLogos/Storefront.Extensibility.Payment.SnapScan.Payment.png" height="22">
+                                                                <a role="button" data-toggle="collapse" data-parent="#payment-accordion" href="#Storefront-Extensibility-Payment-SnapScan-Payment"></a>
+                                                            </h3>
+                                                        </div>
+                                                        <div id="Storefront-Extensibility-Payment-SnapScan-Payment" class="panel-collapse collapse" role="tabpanel">
+                                                            <div class="panel-body payment-form-content"></div>
+                                                        </div>
+                                                        <script defer>
+													$(function () {
+														var formUrl = '/payment/SnapScan/form/?orderRef=AAWAIBFTN9GY7DNBLM5FVSI0WADYVPLU';
+														var systemName = 'Storefront-Extensibility-Payment-SnapScan-Payment';
+														$.ajax({
+															url: formUrl,
+															method: 'GET',
+															success: function (result) {
+																//Hide and clear any displayed forms
+																var container = $('#Storefront-Extensibility-Payment-SnapScan-Payment .payment-form-content')
+																container.html(result);
+																var selects = container.find('.js-select');
+																selects.each(function () {
+																	UI.Select2($(this));
+																});
+															}
+														});
+													});
+                                                        </script>
+                                                    </div>
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading" role="tab">
+                                                            <h3>
+                                                                <input type="radio" name="PaymentMethodName" value="Storefront.Extensibility.Payment.PayU.Payment" data-form="/payment/PayU/form/?orderRef=AAWAIBFTN9GY7DNBLM5FVSI0WADYVPLU" data-systemname="Storefront-Extensibility-Payment-PayU-Payment">
+                                                                <span class="accordion-rl-title">PayU Gateway</span>
+                                                                <img src="//d2rw7fmapbgpu6.cloudfront.net/images/FriendlyLogos/Storefront.Extensibility.Payment.PayU.Payment.png" height="22">
+                                                                <a role="button" data-toggle="collapse" data-parent="#payment-accordion" href="#Storefront-Extensibility-Payment-PayU-Payment"></a>
+                                                            </h3>
+                                                        </div>
+                                                        <div id="Storefront-Extensibility-Payment-PayU-Payment" class="panel-collapse collapse" role="tabpanel">
+                                                            <div class="panel-body payment-form-content"></div>
+                                                        </div>
+                                                        <script defer>
+													$(function () {
+														var formUrl = '/payment/PayU/form/?orderRef=AAWAIBFTN9GY7DNBLM5FVSI0WADYVPLU';
+														var systemName = 'Storefront-Extensibility-Payment-PayU-Payment';
+														$.ajax({
+															url: formUrl,
+															method: 'GET',
+															success: function (result) {
+																//Hide and clear any displayed forms
+																var container = $('#Storefront-Extensibility-Payment-PayU-Payment .payment-form-content')
+																container.html(result);
+																var selects = container.find('.js-select');
+																selects.each(function () {
+																	UI.Select2($(this));
+																});
+															}
+														});
+													});
+                                                        </script>
+                                                    </div>
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading" role="tab">
+                                                            <h3>
+                                                                <input type="radio" name="PaymentMethodName" value="Storefront.Extensibility.Payment.PayUEnterprise.Payment" data-form="/payment/payuenterprise/form/?orderRef=AAWAIBFTN9GY7DNBLM5FVSI0WADYVPLU" data-systemname="Storefront-Extensibility-Payment-PayUEnterprise-Payment">
+                                                                <span class="accordion-rl-title">PayU Onsite </span>
+                                                                <img src="//d2rw7fmapbgpu6.cloudfront.net/images/FriendlyLogos/Storefront.Extensibility.Payment.PayUEnterprise.Payment.png" height="22">
+                                                                <a role="button" data-toggle="collapse" data-parent="#payment-accordion" href="#Storefront-Extensibility-Payment-PayUEnterprise-Payment"></a>
+                                                            </h3>
+                                                        </div>
+                                                        <div id="Storefront-Extensibility-Payment-PayUEnterprise-Payment" class="panel-collapse collapse" role="tabpanel">
+                                                            <div class="panel-body payment-form-content"></div>
+                                                        </div>
+                                                        <script defer>
+													$(function () {
+														var formUrl = '/payment/payuenterprise/form/?orderRef=AAWAIBFTN9GY7DNBLM5FVSI0WADYVPLU';
+														var systemName = 'Storefront-Extensibility-Payment-PayUEnterprise-Payment';
+														$.ajax({
+															url: formUrl,
+															method: 'GET',
+															success: function (result) {
+																//Hide and clear any displayed forms
+																var container = $('#Storefront-Extensibility-Payment-PayUEnterprise-Payment .payment-form-content')
+																container.html(result);
+																var selects = container.find('.js-select');
+																selects.each(function () {
+																	UI.Select2($(this));
+																});
+															}
+														});
+													});
+                                                        </script>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-4">
+                                <div class="cart-summary-contain clearfix" data-smart-affix="data-smart-affix">
+                                    <div class="form-group">
+                                        <div class="voucher-promo-code">
+                                            <i class="fa fa-tags"></i> <span class="checkout-code-text">Promo Code:</span> <span class="promo-code-container">asfasdf</span>
+                                            <a href="#" class="checkout-item-remove"><i class="fa fa-close"></i></a>
+                                        </div>
+                                        <div class="voucher-gift-card">
+                                            <i class="fa fa-gift"></i> <span class="checkout-code-text">Gift Card:</span> <span class="gift-card-container">awefasdf</span>
+                                            <a href="#" class="checkout-item-remove"><i class="fa fa-close"></i></a>
+                                        </div>
+                                        <label class="form-label">Promo Code / Gift Voucher</label>
+                                        <div class="input-group voucher-code-group">
+                                            <input autocomplete="off" class="form-control" id="VoucherCode" name="VoucherCode" placeholder="Code" type="text" value="" />
+                                            <div class="input-group-addon">
+                                                <a class="btn" onclick="ApplyVoucher();">
+                                                    Apply
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <p><small>Note: Only 1 voucher code per user</small></p>
+                                    </div>
+                                    <div class="cart-summary" id="order-summary">
+                                        <input type="hidden" id="need-payment" value="true" />
+                                        <h2>Summary <a href="/checkout/cart">Edit</a></h2>
+                                        <ol class="cart-summary-totals">
+                                            <li>
+                                                <label class="form-label">Subtotal</label>
+                                                <p>R1,400.00</p>
+                                            </li>
+                                            <li>
+                                                <label class="form-label">Shipping</label>
+                                                <p>R0.00</p>
+                                            </li>
+                                            <li class="cart-summary-total">
+                                                <label class="form-label">Total</label>
+                                                <p>R1,400.00</p>
+                                            </li>
+                                        </ol>
+                                    </div>
+                                    <div class="summary-overlay" style="position:absolute;height: 300px;width: 100%;display:none;">
+                                        <div class="summary-loader" style="height:100%;border:5px solid #f4f4f4;background:rgba(255, 255, 255, 0.9) url(//d18pyxhq5394h2.cloudfront.net/images/loader.gif) no-repeat center center;">
+
+                                        </div>
+                                    </div>
+                                    <!-- Voucher -->
+
+                                    <div class="checkout-footer">
+                                        <p>By clicking continue you agree to the <a href="#">T's &amp; C's</a>.</p>
+                                        <button type="submit" class="btn">Continue</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </main>
+        <!-- main content ends -->
+
+        <!-- footer starts -->
+        <footer class="footer">
+            <div class="footer-bottom">
+                <div class="container">
+                    <p>Copyright &copy; <span class="copyright-year"></span> heidi-store4. All rights reserved.</p>
+                    <ul class="payment-methods">
+                        <li><img src="images/base/visa.png" width="43" height="14" alt="Visa"></li>
+                        <li><img src="images/base/master-card.png" width="31" height="19" alt="MasterCard"></li>
+                        <li>EFT</li>
+                        <li><img src="images/base/snapscan.png" width="90" height="19" alt="SnapScan"></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <!-- footer ends -->   
+
+        <!-- Scripts -->
+        <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jQuery.dotdotdot/1.7.4/jquery.dotdotdot.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Specific to this page -->
+        <script src="js/checkout-detail.js"></script>
+       
+    </body>
+</html>

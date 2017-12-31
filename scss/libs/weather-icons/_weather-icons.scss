@@ -1,0 +1,164 @@
+﻿// weather codes can be found here: https://developer.yahoo.com/weather/documentation.html#codes
+
+// icons: http://themes-pixeden.com/font-demos/the-icons-set/weather/ (unused icons were removed from stylesheet)
+
+@font-face {
+  font-family: 'pe-icon-set-weather';
+  src: url("/fonts/pe-icon-set-weather.eot?nlruav");
+  src: url("/fonts/pe-icon-set-weather.eot?nlruav#iefix") format("embedded-opentype"), url("/fonts/pe-icon-set-weather.ttf?nlruav") format("truetype"), url("/fonts/pe-icon-set-weather.woff?nlruav") format("woff"), url("/fonts/pe-icon-set-weather.svg?nlruav#pe-icon-set-weather") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="pe-is-w-"], [class*=" pe-is-w-"] {
+  display: inline-block;
+  font-family: 'pe-icon-set-weather';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+
+.pe-is-w-8:before, .pe-is-w-9:before {
+  content: "\e915";
+}
+
+
+.pe-is-w-19:before,
+.pe-is-w-21:before,
+.pe-is-w-22:before {
+  content: "\e927";
+}
+
+
+
+.pe-is-w-20:before {
+  content: "\e929";
+}
+
+
+.pe-is-w-17:before,
+.pe-is-w-18:before,
+.pe-is-w-40:before {
+  content: "\e935";
+}
+
+
+
+.pe-is-w-35:before {
+  content: "\e937";
+}
+
+.pe-is-w-10:before {
+  content: "\e94d";
+}
+
+
+.pe-is-w-11:before,
+.pe-is-w-12:before {
+  content: "\e94f";
+}
+
+
+.pe-is-w-mix-37:before,
+.pe-is-w-mix-38:before,
+.pe-is-w-mix-39:before {
+  content: "\e95a";
+}
+
+
+.pe-is-w-31:before {
+  content: "\e95e";
+}
+
+.pe-is-w-26:before {
+  content: "\e970";
+}
+
+
+.pe-is-w-28:before,
+.pe-is-w-30:before,
+.pe-is-w-34:before,
+.pe-is-w-44:before {
+  content: "\e972";
+}
+
+
+.pe-is-w-27:before,
+.pe-is-w-29:before,
+.pe-is-w-33:before {
+  content: "\e976";
+}
+
+.pe-is-w-5:before,
+.pe-is-w-6:before,
+.pe-is-w-7:before {
+  content: "\e97a";
+}
+
+.pe-is-w-3:before {
+  content: "\e982";
+}
+
+.pe-is-w-42:before {
+  content: "\e984";
+}
+
+
+.pe-is-w-13:before,
+.pe-is-w-14:before,
+.pe-is-w-15:before,
+.pe-is-w-16:before,
+.pe-is-w-41:before,
+.pe-is-w-43:before,
+.pe-is-w-46:before {
+  content: "\e996";
+}
+
+.pe-is-w-25:before {
+  content: "\e997";
+}
+
+.pe-is-w-32:before,
+.pe-is-w-36:before {
+  content: "\e999";
+}
+
+
+.pe-is-w-4:before {
+  content: "\e9b3";
+}
+
+.pe-is-w-1:before {
+  content: "\e9b5";
+}
+
+
+.pe-is-w-45:before,
+.pe-is-w-47:before {
+  content: "\e9bf";
+}
+
+.pe-is-w-0:before {
+  content: "\e9c0";
+}
+.pe-is-w-2:before {
+    content: "\e9c1";
+}
+
+
+.pe-is-w-23:before {
+  content: "\e9c5";
+}
+
+
+.pe-is-w-24:before {
+  content: "\e9cf";
+}

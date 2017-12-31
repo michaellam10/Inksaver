@@ -1,0 +1,115 @@
+
+
+.section-newsletter {
+    background: $primary-color;
+    margin-bottom: -1px;
+    position: relative;
+    z-index: 1;
+}
+
+.newsletter-inner {
+    padding: 30px 0;
+    text-align: center;
+    float: left;
+    width: 100%;
+}
+
+.newsletter-inner h2 { 
+    color: $newsletter-title-color;
+    font-weight: 600;
+    float: left;
+    margin: 8px 0 0;
+    text-transform: uppercase;
+
+    .fa {
+        float: left;
+        color: $newsletter-icon-color;
+        font-size: 29px;
+        margin: 0 12px 0 0;
+    }
+}
+
+.newsletter-contain {
+    float: right;
+    width: 500px;
+
+    .btn {
+        background: darken($primary-color, 10%);   
+
+        &:hover {
+             background: darken($primary-color, 15%);     
+        }
+    }
+}
+
+.newsletter-inner .input-group-addon {
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+
+.newsletter-inner .form-control {
+    color: $primary-color;
+    border: none;
+    border-right: none;
+}
+
+
+// md
+@media (min-width: 992px) and (max-width: 1199px) {
+    .newsletter-inner h2 {
+        font-size: 22px;
+    }
+    .newsletter-inner h2 .fa {
+        font-size: 27px;
+    }
+}
+
+// sm
+@media (min-width: 768px) and (max-width: 991px) {
+     .newsletter-inner h2 {
+        font-size: 18px;
+            margin: 9px 0 0;
+    }
+    .newsletter-inner h2 .fa {
+        font-size: 20px;
+    }
+    .newsletter-contain {
+        width: 340px;
+    }
+}
+
+// xs
+@media (max-width: 767px) {
+    .newsletter-inner h2 {
+        float: none;   
+        font-size: 16px;
+        margin: 0 0 20px 0;
+    }
+    .newsletter-inner h2 .fa {
+        float: none;  
+        font-size: 18px; 
+    }
+    .newsletter-contain {
+        width: 100%;
+    }
+    .newsletter-contain .input-group {
+        display: block;
+    }
+    .newsletter-inner .input-group .form-control {
+        text-align: center;   
+        display: block;
+       
+    }
+    .newsletter-inner .input-group-addon {
+        display: block;   
+        width: auto;
+        white-space: normal;
+    }
+    .newsletter-inner .btn {
+        display: block;
+        width: 100%;
+      
+    }
+}

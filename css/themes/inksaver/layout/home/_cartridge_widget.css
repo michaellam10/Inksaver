@@ -1,0 +1,236 @@
+.cartridge-widget {
+  height: auto;
+  background-color: #f5f5f5;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 31px;
+  padding-bottom: 23.4px; }
+  @media screen and (max-width: 1000px) {
+    .cartridge-widget {
+      padding-left: 15px !important;
+      padding-right: 15px !important; } }
+  .cartridge-widget .container {
+    padding-top: 35px;
+    padding-bottom: 9px;
+    -webkit-box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    background-color: #ffffff; }
+    .cartridge-widget .container .content-container {
+      width: 100%;
+      height: 100%;
+      padding-left: 42px;
+      padding-right: 64px;
+      padding-bottom: 34px; }
+      .cartridge-widget .container .content-container .cartridge-widget-title h2 {
+        font-size: 30px;
+        color: #575757;
+        margin-bottom: 24px;
+        margin-top: 0; }
+
+.cartridge-widget-panels {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  height: auto;
+  width: 100%;
+  margin-bottom: 46px; }
+  .cartridge-widget-panels h4 {
+    font-size: 12px;
+    margin-top: 15px;
+    color: #CF0974;
+    margin-bottom: 0;
+    text-transform: uppercase; }
+  .cartridge-widget-panels p {
+    color: #575757;
+    font-size: 16px;
+    margin-top: 0; }
+
+.widget-panel {
+  border: 1px solid #dddddd;
+  margin-right: 15px;
+  padding-left: 16px;
+  position: relative;
+  width: 26%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: auto; }
+  .widget-panel .dropdown {
+    position: static; }
+    .widget-panel .dropdown a.dropdown-toggle {
+      position: static !important; }
+    .widget-panel .dropdown:hover .dropdown-menu {
+      display: none !important; }
+      .widget-panel .dropdown:hover .dropdown-menu:hover {
+        display: block !important; }
+  .widget-panel .dropdown.open:hover .dropdown-menu {
+    display: block !important; }
+  .widget-panel .panel-dropdown {
+    position: absolute;
+    top: 15px;
+    right: 17.2px;
+    color: #a7a7a7; }
+    .widget-panel .panel-dropdown i {
+      font-size: 22px; }
+  .widget-panel .dropdown-menu {
+    left: 0 !important;
+    width: 100% !important;
+    margin-top: 5px;
+    -webkit-box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.1); }
+    .widget-panel .dropdown-menu ul li {
+      height: 40px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      margin: 0;
+      padding: 0 20px; }
+      .widget-panel .dropdown-menu ul li:hover {
+        background-color: #f5f5f5; }
+
+#widget-submit {
+  width: 17.58%;
+  min-width: 182px;
+  height: 67px; }
+  #widget-submit .button {
+    background-color: #bbb;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #CF0974;
+    color: #ffffff;
+    font-family: 'ProximaRegular', serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center; }
+
+.cartridge-descriptions .container {
+  padding: 0;
+  height: auto !important;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.cartridge-descriptions .description-title h3 {
+  font-size: 18px;
+  color: #323232;
+  margin-top: 0;
+  margin-bottom: 11px; }
+
+.cartridge-descriptions p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #666666;
+  margin-bottom: 0; }
+
+@media screen and (max-width: 1200px) {
+  .cartridge-widget-panels #panel1,
+  .cartridge-widget-panels #panel2,
+  .cartridge-widget-panels #panel3 {
+    width: 31% !important; }
+  .cartridge-widget-panels #widget-submit {
+    margin-top: 15px; } }
+
+@media screen and (max-width: 992px) {
+  .cartridge-widget-panels #panel1,
+  .cartridge-widget-panels #panel2,
+  .cartridge-widget-panels #panel3 {
+    width: 100% !important; } }
+
+#ink-cartridge-description {
+  padding-right: 35px; }
+  @media screen and (max-width: 992px) {
+    #ink-cartridge-description {
+      margin-bottom: 10px !important;
+      padding-right: 0 !important; } }
+  @media screen and (max-width: 768px) {
+    #ink-cartridge-description {
+      margin-bottom: 20px !important;
+      padding-right: 0 !important; } }
+
+#toner-cartridge-description {
+  padding-left: 6.9374%; }
+  @media screen and (max-width: 992px) {
+    #toner-cartridge-description {
+      padding-left: 0 !important; } }
+
+.cartridge-hr-divider hr {
+  margin-top: 0;
+  margin-bottom: 0; }
+
+.read-more-state {
+  display: none; }
+
+.read-more-target {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0; }
+
+.read-more-state:checked ~ .read-more-wrap .read-more-target {
+  opacity: 1;
+  font-size: inherit;
+  max-height: 999em; }
+
+.read-more-state ~ .read-more-trigger:before {
+  content: 'Read more';
+  font-size: 16px;
+  line-height: 24px;
+  color: #0c7daa; }
+
+.read-more-state:checked ~ .read-more-trigger:before {
+  content: 'Read less';
+  font-size: 16px;
+  line-height: 24px;
+  color: #0c7daa; }
+
+.read-more-trigger {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 0.5em;
+  color: #666;
+  font-size: 0.9em;
+  line-height: 2;
+  float: right;
+  margin: 0;
+  padding: 0; }
+
+.read-more-wrap {
+  height: auto !important;
+  width: auto !important; }
+
+#toner-cartridge-description .read-more-wrap:after {
+  content: '...'; }
+
+#toner-cartridge-description .read-more-state:checked ~ .read-more-wrap:after {
+  content: ''; }

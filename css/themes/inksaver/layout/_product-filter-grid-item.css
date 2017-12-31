@@ -1,0 +1,62 @@
+.product-filter-box {
+  margin-bottom: 40px; }
+  .product-filter-box .product-filter-image-contain {
+    border: solid 1px #dddddd;
+    padding: 20px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .product-filter-box .product-filter-image-contain.coming-soon {
+      display: block;
+      padding: 55px 20px; }
+    .product-filter-box .product-filter-image-contain img {
+      max-width: 100%;
+      margin: 0 auto;
+      display: block; }
+    .product-filter-box .product-filter-image-contain:hover {
+      border: solid 1px #323232; }
+  .product-filter-box .coming-soon {
+    background-color: rgba(245, 245, 245, 0.51); }
+    .product-filter-box .coming-soon img {
+      max-width: 100%;
+      margin-bottom: 18px; }
+    .product-filter-box .coming-soon h2 {
+      font-size: 20px;
+      font-family: 'ProximaBold', serif;
+      color: #323232;
+      margin: 0;
+      text-align: center; }
+      .product-filter-box .coming-soon h2:nth-of-type(2) {
+        color: #666666;
+        font-family: 'ProximaRegular', serif;
+        font-weight: normal; }
+  .product-filter-box .product-filter-text-contain {
+    margin-top: 12px; }
+    .product-filter-box .product-filter-text-contain h3 {
+      font-size: 16px;
+      font-family: 'ProximaBold', serif;
+      line-height: 1.5;
+      color: #989494;
+      margin: 0 0 11px; }
+    .product-filter-box .product-filter-text-contain p {
+      color: #cf0974;
+      font-family: 'ProximaBold', serif;
+      margin-bottom: 15px !important; }
+    .product-filter-box .product-filter-text-contain .product-filter-product-details p {
+      font-size: 14px;
+      font-family: 'ProximaRegular', serif;
+      line-height: 1.43;
+      text-align: left;
+      color: #666666;
+      margin-bottom: 7px !important; }
+      .product-filter-box .product-filter-text-contain .product-filter-product-details p span.product-details-value {
+        font-family: 'ProximaBold', serif; }

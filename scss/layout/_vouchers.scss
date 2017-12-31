@@ -1,0 +1,262 @@
+
+
+.voucher-contain {
+    margin: 0 0 40px 0;   
+}
+
+
+
+.step-list {
+    background: $contrast-color;
+    margin-bottom: 30px;
+
+    li {
+        width: 33%;
+        padding: 25px 0;
+        display: inline-block;
+        text-align: center;
+
+        &.active {
+            .step-number {
+                color: #fff;
+                background: $primary-color;   
+            }   
+        }
+    }   
+
+    .step-number {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        font-weight: 700;
+        text-align: center;
+        margin-right: 8px;
+        line-height: 30px;
+        color: $title-color;
+        background: darken($contrast-color, 5%);
+        @include border-radius(50%);
+    }
+
+    .step-title {
+        display: inline-block;
+        font-weight: 600;
+    }
+
+}
+
+.voucher-sorting-contain {
+    float: left;
+    width: 100%;
+    margin-bottom: 30px;
+    margin-top: -30px;
+    border-bottom: solid 1px $border-color;
+
+    .container {
+         position: relative;
+    }
+
+    #voucher-sorting {
+        max-width: 100%;
+
+        
+        .voucher-sorting-title {
+            color: $title-color;
+            font-weight: 600;
+            padding: 25px 24px 25px 0;
+        }
+
+
+        li {
+            float: left;
+            padding: 0 10px;
+        }
+
+        li a {
+            color: $text-color;
+            display: block;
+            border-bottom: solid 2px #fff; 
+            padding: 25px 12px;
+
+            &:hover, &:focus {
+                color: $title-color;   
+            }
+  
+        }
+
+        li.active a {
+            color: $primary-color;
+            border-bottom: solid 2px $primary-color;
+        }
+    }
+}
+
+
+.voucher-submenu-contain {
+    position: absolute;
+    top: 27px;
+    right: 15px;
+    z-index: 2;
+    width: 20px;
+    text-align: center;
+    cursor: pointer;
+
+    li > .fa {
+        font-size: 20px;
+    }
+
+    #voucher-submenu {
+        background: #fff;
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 180px;
+       
+        text-align: left;
+        box-shadow: 0 1px 3px 0 rgba(0,0,0,0.09);
+
+        li {
+            margin: 0 20px; 
+        }
+
+        li a {
+            color: $text-color;
+            display: block;
+            padding: 15px 0;
+            border-bottom: solid 1px $border-color;
+
+            &:hover {
+                color: $title-color;   
+            }
+        }
+
+        li:last-child a {
+            border: none;   
+        }
+    }
+}
+
+
+.voucher-submenu-contain:hover #voucher-submenu {
+    display: block;
+}
+
+.voucher-items {
+    clear: both;
+}
+
+.voucher-items li {
+    margin-bottom: 30px;
+    position: relative;
+    text-align: center;
+
+    img {
+        max-height: 269px;   
+        display: inline-block;
+    }
+
+    .btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -55px;   
+        margin-top: -22px;   
+        display: none;
+    }
+
+    a:hover .btn {
+        display: block;   
+    }
+}
+
+.voucher-form {
+    margin-bottom: 40px;  
+    
+    .btn-split-col {
+        .btn {
+            float: left;   
+                margin-right: 20px;
+        }   
+        .lnk-default {
+           float: left;
+            margin-top: 12px;   
+        } 
+   }
+  
+}
+
+.voucher-selected {
+    margin-bottom: 30px;   
+    text-align: center;
+    position: relative;
+
+    .btn {
+        position: absolute;
+        left: 0;
+        top: 0;   
+    }
+
+    img {
+        max-height: 400px; 
+        display: inline-block;  
+    }
+}
+
+.voucher-message-received {
+       margin-bottom: 30px;
+}
+
+.voucher-message-text {
+  color: $title-color;
+}
+
+// md
+@media (min-width: 992px) and (max-width: 1199px) {
+  
+}
+
+
+/* sm */
+@media (min-width: 768px) and (max-width: 991px) {
+   
+    .voucher-submenu-contain {
+        right: 30px;   
+    }
+    .step-list li {
+        width: 32%;   
+   }
+  
+}
+
+/* xs */
+@media (max-width: 767px) {
+
+   
+   #voucher-submenu {
+        max-height: 249px;
+        overflow-y: scroll;
+   }
+    .step-list li {
+        width: 32%;   
+   }
+   .step-list .step-number {
+        width: 25px;
+        height: 25px;
+        margin-right: 5px;
+        line-height: 25px;   
+        margin-bottom: 15px;
+   }
+   .step-list .step-title {
+        font-size: 11px;   
+        display: block;
+        width: 90px;
+        margin: 0 auto;
+   }
+   .voucher-form .btn-split-col .btn {
+        margin-right: 0;   
+   }
+   .voucher-form .btn-split-col .lnk-default {
+        margin-top: 18px;   
+        width: 100%;
+   }
+}

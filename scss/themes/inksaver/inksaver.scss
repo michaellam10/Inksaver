@@ -1,0 +1,49 @@
+// Inksaver Custom Utilities
+@import 'utilities/colours';
+@import 'utilities/typography';
+
+// ==========================================================================
+// Import Base Template Styles
+// ==========================================================================
+@import '../../styles';
+
+
+// ==========================================================================
+// Inksaver Custom Layout
+// ==========================================================================
+
+
+// Used across all pages
+@import 'layout/header';
+@import 'layout/navbar';
+@import 'layout/navbar_menus';
+@import 'layout/footer';
+
+// Specific to index page
+@import 'layout/carousel';
+@import 'layout/cartridge_widget';
+@import 'layout/logobar';
+@import 'layout/horizontal_product_carousel';
+@import 'layout/advertisement';
+@import 'layout/testimonial_carousel';
+@import 'layout/newsletter';
+
+// Specific to product-detail page
+@import 'layout/product-detail';
+@import 'layout/product-detail-info-tabs';
+
+// Specific to product-filter page
+@import 'layout/product-filter-widget';
+@import 'layout/filter-grid';
+@import 'layout/category-filter-grid-item';
+@import 'layout/product-filter-grid-item';
+@import 'layout/support';
+
+// Specific to blog-article page
+@import 'layout/blog-article';
+
+//Specific to help-centre page
+@import 'layout/help-centre.scss';
+
+//Specific to modal portfolio notice
+@import 'layout/modal_portfolio.scss';

@@ -1,0 +1,374 @@
+// table
+.table {
+    margin: 0;   
+
+    .infos-contain {
+        width: 100%;
+        text-align: center;
+        
+        .btn-infos {
+            padding-top: 0;
+            padding-bottom: 0;   
+        }
+
+        .dropdown-menu {
+            top: 30px;   
+        }
+    }
+
+    td > a {
+       
+    }
+
+    .infos-contain {
+        .btn-infos {
+            padding: 0 8px;
+            background: none;     
+        } 
+    }
+}
+
+// table bordered
+.table-bordered.table {
+
+    table-layout: fixed;
+
+    
+    tr {
+        th {
+            background: $contrast-color;
+            font-weight: 400;
+            width: 140px;
+           border-color: $border-color; 
+            padding: 16px 15px;  
+        }
+        td {
+            border-color: $border-color;   
+            padding: 16px 15px; 
+        }
+    }   
+}
+
+
+
+.table-badge, .status-badge {
+    border-radius: 2px;
+    padding: 4px 9px 3px 9px;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    font-size: 12px;
+    background: $text-color;
+}
+
+.table-badge.red, .status-badge.red {
+    color: darken($error-color, 40%);
+    background: lighten($error-color, 32%);
+}
+
+.table-badge.green, .status-badge.green {
+   color: darken($success-color, 40%);
+    background: lighten($success-color, 42%);
+}
+
+.table-badge.orange, .status-badge.orange {
+    background: lighten($warning-color, 26%);
+    color: darken($warning-color, 40%);
+}
+
+// table basic
+.table-basic {
+    tbody {
+        tr {
+            th {
+                color: #262e31;
+                font-weight: 400;
+                padding: 16px 15px;
+                background: $contrast-color;
+                vertical-align: middle;
+                border-right: solid 1px $border-color;   
+            }   
+
+            td {
+                padding: 16px 15px;
+                border: solid 1px $border-color;   
+                
+                vertical-align: middle;
+                word-wrap: break-word;
+            }
+        }   
+    }
+}
+
+// table th left
+.table-th-left {
+    border: solid 1px $border-color;
+    margin-bottom: 20px;
+    table-layout: fixed;
+
+    tbody {
+
+        tr {
+            th {
+                color: $title-color;
+                width: 180px;
+                font-weight: 400;
+                padding: 16px 15px;
+                background: $contrast-color;
+                vertical-align: middle;
+                border-top: solid 1px $border-color;
+                border-right: solid 1px $border-color;
+            }
+
+            td {
+                padding: 16px 15px;
+                border-bottom: solid 1px $border-color;
+                border-top: solid 1px $border-color;
+                border-left: none;
+                border-right: solid 1px $border-color;
+                vertical-align: middle;
+                word-wrap: break-word;
+            }
+        }
+    } 
+}
+
+// table default
+.table-default {
+    border: solid 1px $border-color;
+    margin-bottom: 20px;
+  
+    tbody, thead {
+
+        tr {
+            th {
+                color: $title-color;
+                font-weight: 400;
+                padding: 16px 15px;
+                background: $contrast-color;
+                vertical-align: middle;
+                border-bottom: none;
+                border-top: solid 1px $border-color;
+                border-right: solid 1px $border-color;
+            }
+
+            td {
+                padding: 16px 15px;
+                border: solid 1px $border-color;
+                vertical-align: middle;
+                word-wrap: break-word;
+
+            }
+        }
+    } 
+}
+
+// bootstrap table responsive
+.table-responsive {
+    margin: 0;   
+}
+
+.table-editable {
+     tbody {
+
+        tr {
+           
+            span {
+                float: left; 
+                width: 92%;  
+            }
+        }
+    }
+
+
+    .infos-contain {
+        width: auto;
+        float: right; 
+        top: 0;
+        right: -5px; 
+    }
+  
+}
+
+
+// md
+@media (min-width: 992px) and (max-width: 1199px) {
+    .table-responsive {
+        border: solid 1px $border-color;   
+    }
+    
+}
+
+
+// sm
+@media (min-width: 768px) and (max-width: 991px) {
+   .table-bordered {
+        float: left;
+        width: 100%;
+        overflow: auto;
+        display: inline; 
+        border: solid 1px $border-color;  
+    }
+    .table-bordered > tbody > tr > td,
+    .table-bordered > tbody > tr > th {
+         border-top: none;
+         border-left: none;
+    }
+    .table-bordered > tbody > tr > td:last-child {
+        border-right: none;   
+    }
+    .table-responsive {
+        border: solid 1px $border-color;   
+    }
+     .table .infos-contain .dropdown-menu {
+        width: 100%;
+     }
+    
+}
+
+// xs
+@media (max-width: 767px) {
+     .table-bordered {
+        float: left;
+        width: 100%;
+        overflow: auto;
+        display: inline;   
+        border: solid 1px $border-color;
+    }
+    .table-bordered > tbody > tr > td,
+    .table-bordered > tbody > tr > th {
+         border-top: none;
+         border-left: none;
+    }
+    .table-bordered > tbody > tr > td:last-child {
+        border-right: none;   
+    }
+     .table-responsive {
+        border: solid 1px $border-color;   
+    }
+     .table-th-left tbody tr th {
+           width: 108px;
+           padding-top: 11px;
+           padding-bottom: 11px;
+     }
+     .table-th-left tbody tr td {
+        padding-top: 11px;
+        padding-bottom: 11px;   
+     }
+    
+     .table .infos-contain .dropdown-menu {
+        position: static;
+        display: block;
+        @include box-shadow(none);
+        width: 100%;
+        border: none;
+     }
+     .table .infos-contain .btn-infos {
+        display: none;   
+     }
+     .table .infos-contain .dropdown-menu li {
+         padding: 0!important;
+         margin: 0;
+
+     }
+     .infos-contain .dropdown-menu li a {
+        padding: 12px 0;   
+        font-size: 12px;
+     }
+      table.dataTable > tbody > tr.child ul.dtr-details {
+        display: block!important;   
+     }
+     .table-badge {
+        font-size: 10px;   
+     }
+     .table-default {
+         border-collapse: separate;
+     }
+     .table-default th {
+         display: none;
+     }
+     .table-default tr {
+         display: block;
+     }
+           .table-default tr {
+        border-bottom: solid 1px $border-color;   
+      }
+
+     .table-default tr:last-child,
+     .table-default tr:first-child {
+        border-bottom: none;   
+      }
+     .table-default tbody tr td {
+        display: block;
+        text-align: left;
+        border: none;
+       
+    }
+     .table-default td:before {
+        content: attr(data-label);
+        color: $title-color;
+        font-weight: bold;
+        float: left;
+        width: 80px;
+       
+        margin: 0 10px 5px 0;
+    }
+    .table-default-sub-heading-row {
+        background: $contrast-color;   
+    }
+   .table-editable {
+        tbody {
+            tr {
+                td {
+                    border-bottom: solid 1px $border-color;
+
+                    &:before {
+                        display: none;   
+                    }
+                }
+
+            }
+            tr:last-child td {
+                border: none;   
+            }   
+        }
+   }
+   .table-editable tbody tr span {
+        width: 100%;   
+        float: none;
+        margin-bottom: 15px;
+        display: block;
+   }
+   .table-editable .infos-contain {
+        float: none;
+        right: auto;
+        width: 100%;
+   }
+   .table-editable .infos-contain .dropdown-menu {
+       background: none;
+   }
+   .table-basic {
+       tbody {
+            tr {
+                td {
+                    display: block;
+                    text-align: left;
+                    border-bottom: none;
+                    padding-top: 11px;
+                    padding-bottom: 11px;
+                }
+                th {
+                    padding-top: 11px;
+                    padding-bottom: 11px;   
+                }
+
+                
+            &:last-child td {
+                        border-bottom: solid 1px $border-color;   
+                    }
+            }   
+
+        }
+    }
+}

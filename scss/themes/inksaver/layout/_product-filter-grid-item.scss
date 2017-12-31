@@ -1,0 +1,114 @@
+/* Individual grid item in product filter results */
+// ===============================================================
+
+.product-filter-box {
+  margin-bottom: 40px;
+
+  .product-filter-image-contain {
+    border: solid 1px $border-color;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: 0.2s;
+
+    &.coming-soon {
+      display: block;
+      padding: 55px 20px;
+    }
+
+    img {
+      max-width: 100%;
+      margin: 0 auto;
+      display: block;
+    }
+
+    .product-badge {
+      border-radius: 0;
+      padding: 11px 9px;
+      width: auto;
+      height: auto;
+      font-size: 11px;
+      font-family: 'ProximaBold', serif;
+      text-transform: uppercase;
+      line-height: 1.09;
+      text-align: center;
+      top: 0;
+      left: 0;
+
+      &.feature-badge {
+        background: $primary-color;
+        color: #fff;
+      }
+
+      &.orig-badge {
+        background-color: $gray-light;
+        color: $gray-text-medium;
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+    }
+
+    &:hover {
+      border: solid 1px $gray-dark;
+      transition: 0.3s;
+    }
+  }
+
+  .coming-soon {
+    background-color: rgba(245, 245, 245, 0.51);
+
+    img {
+      max-width: 100%;
+      margin-bottom: 18px;
+    }
+
+    h2 {
+      font-size: 20px;
+      font-family: 'ProximaBold', serif;
+      color: $gray-text-dark;
+      margin: 0;
+      text-align: center;
+
+      &:nth-of-type(2) {
+        color: $gray-text-medium;
+        font-family: 'ProximaRegular', serif;
+        font-weight: normal;
+      }
+    }
+  }
+
+  .product-filter-text-contain {
+    margin-top: 12px;
+
+    h3 {
+      font-size: 16px;
+      font-family: 'ProximaBold', serif;
+      line-height: 1.5;
+      color: $text-color;
+      margin: 0 0 11px;
+    }
+
+    p {
+      color: $secondary-color;
+      font-family: 'ProximaBold', serif;
+      margin-bottom: 15px !important;
+    }
+
+    .product-filter-product-details {
+      p {
+        font-size: 14px;
+        font-family: 'ProximaRegular', serif;
+        line-height: 1.43;
+        text-align: left;
+        color: $gray-text-medium;
+        margin-bottom: 7px !important;
+
+        span.product-details-value {
+          font-family: 'ProximaBold', serif;
+        }
+      }
+    }
+  }
+}
